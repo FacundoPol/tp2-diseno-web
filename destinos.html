@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - aventura</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/destinos.css">
+</head>
+ 
+<body>
+    <header class="header container">
+			<a href="/" class="container-logo">
+				<img src="img/logo.png" alt="Logo" />
+				<span class="logo-text"> Destinova </span>
+			</a>
+
+			<nav class="nav-links">
+				<ul>
+					<li>
+						<a href="destinos.html">Desntinos</a>
+					</li>
+					<li>
+						<a href="agencias.html">Agencia</a>
+					</li>
+					<li>
+						<a href="precios.html">Precios</a>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<ul class="container-sign">
+				<li class="sign-item">
+					<a href="#" class="sign-in">Entrar</a>
+				</li>
+				<li class="sign-item">
+					<a href="#" class="sign-up">Registrarse</a>
+				</li>
+			</ul>
+
+			<button class="btn-bars">
+				<i class="fa-solid fa-bars-staggered"></i>
+			</button>
+
+			<nav class="menu-responsive">
+				<a href="/" class="container-logo-responsive">
+					<img src="img/logo.png" alt="Logo" />
+					<span class="logo-text"> Adventurero </span>
+				</a>
+
+				<ul>
+					<li>
+						<a href="#">Destinos</a>
+					</li>
+					<li>
+						<a href="#">Agencia</a>
+					</li>
+					<li>
+						<a href="#">Precios</a>
+					</li>
+					<li>
+						<a href="#" class="sign-in">Entrar</a>
+					</li>
+					<li>
+						<a href="#" class="sign-up">Registrarse</a>
+					</li>
+				</ul>
+
+				<button class="btn-close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</nav>
+		</header>
+
+        <main class="container">
+    <div class="newspaper-header">
+        <h1>CRÓNICAS DE VIAJE</h1>
+        <div class="newspaper-meta">
+            <span>Edición: Invierno 2026</span>
+            <span>Jujuy, Argentina</span>
+        </div>
+    </div>
+
+    <section class="filter-section">
+        <input type="radio" name="categoria" id="todas" checked>
+        <input type="radio" name="categoria" id="norte">
+        <input type="radio" name="categoria" id="sur">
+        <input type="radio" name="categoria" id="playa">
+
+        <div class="filter-labels">
+            <label for="todas">Todas</label>
+            <label for="norte">Norte Argentino</label>
+            <label for="sur">Patagonia</label>
+            <label for="playa">Costa</label>
+        </div>
+
+        <div class="newspaper-grid">
+            <article class="news-item norte reveal">
+                <img src="img/home/banerprincipal.webp" alt="Purmamarca">
+                <div class="content">
+                    <span class="tag">Norte</span>
+                    <h2>Purmamarca: El cerro de los siete colores</h2>
+                    <p>Un recorrido por el corazón de la Quebrada de Humahuaca, donde la tierra cuenta historias milenarias.</p>
+                </div>
+            </article>
+
+            <article class="news-item sur reveal">
+                <img src="img/destinos/des4.jpeg" alt="Glaciar">
+                <div class="content">
+                    <span class="tag">Sur</span>
+                    <h2>Hielo Continental</h2>
+                    <p>La majestuosidad del Perito Moreno en una expedición única por los gigantes de hielo de Santa Cruz.</p>
+                </div>
+            </article>
+
+            <article class="news-item playa reveal">
+                <img src="img/destinos/des5.jpeg" alt="Mar del Plata">
+                <div class="content">
+                    <span class="tag">Playa</span>
+                    <h2>Atardeceres en el Faro</h2>
+                    <p>La costa argentina se prepara para una temporada récord con playas renovadas y nuevos servicios turísticos.</p>
+                </div>
+            </article>
+
+            <article class="news-item norte reveal">
+                <img src="img/destinos/des1.jpeg" alt="Salinas">
+                <div class="content">
+                    <span class="tag">Norte</span>
+                    <h2>Salinas Grandes</h2>
+                    <p>El desierto blanco que enamora a los fotógrafos del mundo. Una experiencia visual que desafía los sentidos.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="comments-section">
+    <h3 class="comments-title">Comunidad Destinova</h3>
+    
+    <div class="comment-card">
+        <div class="avatar-css"></div>
+        
+        <div class="comment-content">
+            <span class="user-name">Roberto Andrade</span>
+            <p class="user-text">Hermosos paisajes </p>
+        </div>
+        
+    </div>
+    <div class="comment-card">
+        <div class="avatar-css"></div>
+        
+        <div class="comment-content">
+            <span class="user-name">Maria Condori</span>
+            <p class="user-text">Maravillosa experioencia</p>
+        </div>
+        
+    </div>
+    <div class="comment-card">
+        <div class="avatar-css"></div>
+        
+        <div class="comment-content">
+            <span class="user-name">Leonel Maertinez</span>
+            <p class="user-text">Bellas Vistas</p>
+        </div>
+        
+    </div>
+</section>
+</main>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+<!-- FOOTER -->
+<footer>
+			<div class="container footer-content">
+				<div class="columns-footer">
+					<div class="column">
+						<a href="/" class="container-logo">
+							<img src="img/logo.png" alt="Logo" />
+							<span class="logo-text"> Destinova </span>
+						</a>
+
+						<div class="container-social-links">
+							<span>Síguenos: </span>
+							<div class="links">
+								<a href="#">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<span> Sobre Nosotros </span>
+
+						<ul>
+							<li>
+								<a href="#">Nuestra Historia</a>
+							</li>
+							<li>
+								<a href="#">Blog Viajes y consejos</a>
+							</li>
+							<li>
+								<a href="#">Trabaja con nosotros</a>
+							</li>
+							<li>
+								<a href="#">Términos y condiciones</a>
+							</li>
+							<li>
+								<a href="#">Preguntas Frecuentes</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="column">
+						<span>Soporte</span>
+
+						<ul>
+							<li>
+								<a href="#">Soporte al cliente</a>
+							</li>
+							<li>
+								<a href="#">Políticas de privacidad</a>
+							</li>
+							<li>
+								<a href="#">Contáctanos</a>
+							</li>
+						</ul>
+                        
+					</div>
+                      <div class="column">
+                         <span>Ubicación</span>
+
+                            <iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"loading="lazy"></iframe>
+                      </div>
+					<div class="column">
+                       <span>Suscribite</span>
+
+                           <p>Recibí ofertas y novedades</p>
+
+                           <form class="newsletter">
+                           <input type="email" placeholder="Tu email" required>
+                             <button type="submit">Suscribirse</button>
+                             </form>
+                      </div>
+                      
+					</div>
+				</div>
+
+				<p class="copyright">
+					&copy; 2024 Adventurero | Desarrollado por Roberto Andrade
+				</p>
+			</div>
+		</footer>
+<script src="js/global.js"></script>
+</body>
+</html>

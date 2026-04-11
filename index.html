@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - aventura</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <header class="header container">
+			<a href="/" class="container-logo">
+				<img src="img/logo.png" alt="Logo" />
+				<span class="logo-text"> Destinova </span>
+			</a>
+
+			<nav class="nav-links">
+				<ul>
+					<li>
+						<a href="destinos.html">Desntinos</a>
+					</li>
+					<li>
+						<a href="agencias.html">Agencia</a>
+					</li>
+					<li>
+						<a href="#">Precios</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="container-sign">
+				<li class="sign-item">
+					<a href="#" class="sign-in">Entrar</a>
+				</li>
+				<li class="sign-item">
+					<a href="#" class="sign-up">Registrarse</a>
+				</li>
+			</ul>
+
+			<button class="btn-bars">
+				<i class="fa-solid fa-bars-staggered"></i>
+			</button>
+
+			<nav class="menu-responsive">
+				<a href="/" class="container-logo-responsive">
+					<img src="img/logo.png" alt="Logo" />
+					<span class="logo-text"> Adventurero </span>
+				</a>
+
+				<ul>
+					<li>
+						<a href="destinos.html">Destinos</a>
+					</li>
+					<li>
+						<a href="agencias.html">Agencia</a>
+					</li>
+					<li>
+						<a href="#">Precios</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contactos</a>
+					</li>
+					<li>
+						<a href="#" class="sign-in">Entrar</a>
+					</li>
+					<li>
+						<a href="#" class="sign-up">Registrarse</a>
+					</li>
+				</ul>
+
+				<button class="btn-close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</nav>
+		</header>
+              <!-- BANNER -->
+        <section class="container hero-banner">
+			<div class="content">
+				<span>Explora con nosotros</span>
+				<h1>Descubre tu siguiente aventura con nosotros</h1>
+				<p>
+					Embárcate en un viaje inolvidable con nuestro excepcional
+					paquete turístico global, que ofrece una mezcla perfecta de
+					lujo, aventura e inmersión cultural en los destinos más
+					icónicos del mundo.
+				</p>
+
+				<div class="buttons-hero-banner">
+					<a href="#" class="btn btn-banner-primary">Reserva ahora</a>
+					<a href="#" class="btn btn-banner-secondary">Saber más</a>
+				</div>
+			</div>
+
+			<div class="container-images-banner">
+				<div class="container-main-image">
+					<img
+						src="img/home/banerprincipal.webp"
+						alt="Imagen Principal"
+						class="main-image"
+					/>
+				</div>
+
+				<img
+					src="img/home/baner1.jpg"
+					alt="Imagen Secundaria"
+				/>
+				<img
+					src="img/home/baner2.jpg"
+					alt="Imagen Secundaria"
+				/>
+				<img
+					src="img/home/baner3.png"
+					alt="Imagen Secundaria"
+				/>
+				
+			</div>
+        </section>
+        <section class="hero-video">
+
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="img/home/video/vjujuy.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="content-video">
+    <h2>Viví la experiencia</h2>
+    <p>Descubrí destinos únicos con nosotros</p>
+    <a href="#" class="btn-video">Explorar</a>
+  </div>
+
+</section>
+
+<section class="contador container">
+
+  <div class="item">
+    <h2 class="numero">500+</h2>
+    <p>Visitantes felices</p>
+  </div>
+
+  <div class="item">
+    <h2 class="numero">120+</h2>
+    <p>Destinos</p>
+  </div>
+
+  <div class="item">
+    <h2 class="numero">50+</h2>
+    <p>Agencias</p>
+  </div>
+
+</section>
+<section class="testimonios container">
+
+  <h2>Lo que dicen nuestros viajeros</h2>
+
+  <!-- INPUTS -->
+  <input type="radio" name="slider" id="t1" checked>
+  <input type="radio" name="slider" id="t2">
+  <input type="radio" name="slider" id="t3">
+
+  <!-- SLIDER -->
+  <div class="slider">
+    <div class="slides">
+
+      <div class="slide">
+        <p>"Increíble experiencia en Jujuy"</p>
+        <h4>— María López</h4>
+      </div>
+
+      <div class="slide">
+        <p>"Todo organizado perfecto"</p>
+        <h4>— Juan Pérez</h4>
+      </div>
+
+      <div class="slide">
+        <p>"Paisajes únicos"</p>
+        <h4>— Ana Gómez</h4>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BOTONES -->
+  <div class="controls">
+    <label for="t1"></label>
+    <label for="t2"></label>
+    <label for="t3"></label>
+  </div>
+
+</section>
+<!-- FOOTER -->
+<footer>
+			<div class="container footer-content">
+				<div class="columns-footer">
+					<div class="column">
+						<a href="/" class="container-logo">
+							<img src="img/logo.png" alt="Logo" />
+							<span class="logo-text"> Destinova </span>
+						</a>
+
+						<div class="container-social-links">
+							<span>Síguenos: </span>
+							<div class="links">
+								<a href="#">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<span> Sobre Nosotros </span>
+
+						<ul>
+							<li>
+								<a href="#">Nuestra Historia</a>
+							</li>
+							<li>
+								<a href="#">Blog Viajes y consejos</a>
+							</li>
+							<li>
+								<a href="#">Trabaja con nosotros</a>
+							</li>
+							<li>
+								<a href="#">Términos y condiciones</a>
+							</li>
+							<li>
+								<a href="#">Preguntas Frecuentes</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="column">
+						<span>Soporte</span>
+
+						<ul>
+							<li>
+								<a href="#">Soporte al cliente</a>
+							</li>
+							<li>
+								<a href="#">Políticas de privacidad</a>
+							</li>
+							<li>
+								<a href="#">Contáctanos</a>
+							</li>
+						</ul>
+                        
+					</div>
+                      <div class="column">
+                         <span>Ubicación</span>
+
+                            <iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"loading="lazy"></iframe>
+                      </div>
+					<div class="column">
+                       <span>Suscribite</span>
+
+                           <p>Recibí ofertas y novedades</p>
+
+                           <form class="newsletter">
+                           <input type="email" placeholder="Tu email" required>
+                             <button type="submit">Suscribirse</button>
+                             </form>
+                      </div>
+                      
+					</div>
+				</div>
+
+				<p class="copyright">
+					&copy; 2024 Adventurero | Desarrollado por Roberto Andrade
+				</p>
+			</div>
+		</footer>
+<script src="js/global.js"></script>
+</body>
+</html>
