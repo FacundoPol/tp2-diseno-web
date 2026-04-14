@@ -40,7 +40,7 @@
 
 		p {
 			font-size: 14px;
-			color: var(--text-color);
+			color: #333;
 			width: 80%;
 			line-height: 1.5;
 		}
@@ -69,7 +69,7 @@
 			}
 
 			.btn-banner-secondary {
-				color: var(--text-color);
+				color: #201d2e;
 				border: 2px solid var(--primary-color);
 			}
 		}
@@ -368,12 +368,6 @@
 #t3:checked ~ .controls label:nth-child(3) {
   background: var(--primary-color);
 }
-
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20 0px;
-} */
 
 
 /* ********** SECTION ABOUT ********* */
