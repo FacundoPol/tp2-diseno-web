@@ -4,7 +4,9 @@
 	/* COLORS */
 	--primary-color: #59A8F7;
 	--text-color: #505050;
-	--text-color-dark: #2c2c2c;
+	--bg-color: white;
+	--title-color: #2c2c2c;
+	/*--text-color-dark: #2c2c2c;*/
 
 	/* FUENTES */
 	--title-font: 'DM Serif Display', serif;
@@ -13,7 +15,12 @@
 	/* SOMBRAS */
 	--shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-
+/*sobrescribe las variables*/
+body.dark-mode{
+	--bg-color:black;
+	--text-color:white;
+	--title-color:white;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -22,8 +29,8 @@
 
 body {
 	font-family: var(--text-font);
-	background-color: #f5f5f5;
-
+	background-color: var(--bg-color);
+	color: var(--text-color);
 	&.no-scroll {
 		overflow: hidden;
 	}
