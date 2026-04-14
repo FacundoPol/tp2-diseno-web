@@ -368,11 +368,12 @@
 #t3:checked ~ .controls label:nth-child(3) {
   background: var(--primary-color);
 }
-.container {
+
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-}
+  padding: 20 0px;
+} */
 
 
 /* ********** SECTION ABOUT ********* */
