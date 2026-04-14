@@ -12,18 +12,17 @@
 		<link rel="stylesheet" href="css/tours.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/animaciones.css">
-<head>
-    <meta charset="UTF-8">
-	<link rel="stylesheet" href="/css/global.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/agencia2.css">
-    <title>Agencia</title>
 
-</head>
-<body>
-    <header class="header container">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+			integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header class="header container">
 			<a href="/" class="container-logo">
 				<img src="img/logo.png" alt="Logo" />
 				<span class="logo-text"> Destinova </span>
@@ -38,7 +37,7 @@
 						<a href="agencias.html">Agencia</a>
 					</li>
 					<li>
-						<a href="precios.html">Precios</a>
+						<a href="#">Precios</a>
 					</li>
 					<li>
 						<a href="contacto.html">Contacto</a>
@@ -54,11 +53,7 @@
 					<a href="#" class="sign-up efecto-achicar">Registrarse</a>
 				</li>
 			</ul>
-			<!-- se agrega el boton del modo oscuro-->
-			 <button id="btn-modo-oscuro" class="btn-modo-oscuro">
-				<i class="fa-solid fa-moon"></i>
-			 </button>
-			 <!-------------------->
+
 			<button class="btn-bars">
 				<i class="fa-solid fa-bars-staggered"></i>
 			</button>
@@ -95,37 +90,43 @@
 				</button>
 			</nav>
 		</header>
-        <!-- SECTION -->
-		 <section class="section-cards">
-		 <h2 class="title-agencias">Nuestras Agencias</h2>
-         <div class="cards">
-			<div class="container-card">
-				<div class="card">
-					<div class="face front">
-						<img src="/img/destinos/des5.jpeg" alt="">
-						<h3>Mar del Plata</h3>
-					</div>
-					<div class="face back">
-						<h3>Mar del Plata</h3>
-						<p>Direccion: Lorem ipsum dolor sit</p>
-						<p>Numero: 333222111</p>
-						<div class="link">
-							<a href="/contacto.html">Contactar</a>
-						</div>
-					</div>
+
+		<section class="background-hero-banner">
+			<div class="container container-hero-banner">
+				<div class="column-1">
+					<h1>Elige tu paquete de viaje favorito</h1>
+
+					<p>
+						Explora nuestras increíbles ofertas de destinos con una
+						lista completa que incluye todos los lugares maravillosos
+						que puedes visitar.
+					</p>
 				</div>
-				<div class="rating">
-					<input value="5" name="rate1" id="star5-1" type="radio">
-					<label for="star5-1"></label>
 
-					<input value="4" name="rate1" id="star4-1" type="radio">
-					<label for="star4-1"></label>
+				<div class="column-2 container-form">
+					<form action="#" class="form">
+						<h3 class="title">
+							<span class="icon">🔶</span> Buscar paquetes
+						</h3>
 
-					<input value="3" name="rate1" id="star3-1" type="radio">
-					<label for="star3-1"></label>
+						<div class="form-group">
+							<select name="destination" id="destination">
+								<option value="">Destino</option>
+								<option value="paris">París</option>
+								<option value="new-york">Nueva York</option>
+								<option value="tokyo">Tokio</option>
+							</select>
+						</div>
 
-					<input value="2" name="rate1" id="star2-1" type="radio">
-					<label for="star2-1"></label>
+						<div class="form-group">
+							<select name="guests" id="guests">
+								<option value="">Invitados</option>
+								<option value="1">1 Huésped</option>
+								<option value="2">2 Huéspedes</option>
+								<option value="3">3 Huéspedes</option>
+								<option value="4">4 o más</option>
+							</select>
+						</div>
 
 						<div class="form-group">
 							<label for="check-in">Fecha de Salida:</label>
@@ -141,171 +142,8 @@
 							Buscar ahora
 						</button>
 					</form>
-					<input value="1" name="rate1" id="star1-1" type="radio">
-					<label for="star1-1"></label>
 				</div>
 			</div>
-			<div class="container-card">
-				<div class="card">
-					<div class="face front">
-						<img src="/img/home/baner1.jpg" alt="">
-						<h3>Jujuy</h3>
-					</div>
-					<div class="face back">
-						<h3>Jujuy</h3>
-						<p>Direccion: Lorem ipsum dolor sit</p>
-						<p>Numero: 333222111</p>
-						<div class="link">
-							<a href="/contacto.html">Contactar</a>
-						</div>
-					</div>
-				</div>
-				<div class="rating">
-					<input value="5" name="rate2" id="star5-2" type="radio">
-					<label for="star5-2"></label>
-
-					<input value="4" name="rate2" id="star4-2" type="radio">
-					<label for="star4-2"></label>
-
-					<input value="3" name="rate2" id="star3-2" type="radio">
-					<label for="star3-2"></label>
-
-					<input value="2" name="rate2" id="star2-2" type="radio">
-					<label for="star2-2"></label>
-
-					<input value="1" name="rate2" id="star1-2" type="radio">
-					<label for="star1-2"></label>
-				</div>
-			</div>
-			<div class="container-card">
-				<div class="card">
-					<div class="face front">
-						<img src="/img/destinos/des4.jpeg" alt="">
-						<h3>Santa Cruz</h3>
-					</div>
-					<div class="face back">
-						<h3>Santa Cruz</h3>
-						<p>Direccion: Lorem ipsum dolor sit</p>
-						<p>Numero: 333222111</p>
-						<div class="link">
-							<a href="/contacto.html">Contactar</a>
-						</div>
-					</div>
-				</div>
-				<div class="rating">
-					<input value="5" name="rate3" id="star5-3" type="radio">
-					<label for="star5-3"></label>
-
-					<input value="4" name="rate3" id="star4-3" type="radio">
-					<label for="star4-3"></label>
-
-					<input value="3" name="rate3" id="star3-3" type="radio">
-					<label for="star3-3"></label>
-
-					<input value="2" name="rate3" id="star2-3" type="radio">
-					<label for="star2-3"></label>
-
-					<input value="1" name="rate3" id="star1-3" type="radio">
-					<label for="star1-3"></label>
-				</div>
-			</div>
-			<div class="container-card">
-				<div class="card">
-					<div class="face front">
-						<img src="/img/destinos/des2.jpg" alt="">
-						<h3>Buenos Aires</h3>
-					</div>
-					<div class="face back">
-						<h3>Buenos Aires</h3>
-						<p>Direccion: Lorem ipsum dolor sit</p>
-						<p>Numero: 333222111</p>
-						<div class="link">
-							<a href="/contacto.html">Contactar</a>
-						</div>
-					</div>
-				</div>
-				<div class="rating">
-					<input value="5" name="rate4" id="star5-4" type="radio">
-					<label for="star5-4"></label>
-
-					<input value="4" name="rate4" id="star4-4" type="radio">
-					<label for="star4-4"></label>
-
-					<input value="3" name="rate4" id="star3-4" type="radio">
-					<label for="star3-4"></label>
-
-					<input value="2" name="rate4" id="star2-4" type="radio">
-					<label for="star2-4"></label>
-
-					<input value="1" name="rate4" id="star1-4" type="radio">
-					<label for="star1-4"></label>
-				</div>
-			</div>
-			<div class="container-card">
-				<div class="card">
-					<div class="face front">
-						<img src="/img/destinos/des6.jpeg" alt="">
-						<h3>Mendoza</h3>
-					</div>
-					<div class="face back">
-						<h3>Mendoza</h3>
-						<p>Direccion: Lorem ipsum dolor sit</p>
-						<p>Numero: 333222111</p>
-						<div class="link">
-							<a href="/contacto.html">Contactar</a>
-						</div>
-					</div>
-				</div>
-				<div class="rating">
-					<input value="5" name="rate5" id="star5-5" type="radio">
-					<label for="star5-5"></label>
-
-					<input value="4" name="rate5" id="star4-5" type="radio">
-					<label for="star4-5"></label>
-
-					<input value="3" name="rate5" id="star3-5" type="radio">
-					<label for="star3-5"></label>
-
-					<input value="2" name="rate5" id="star2-5" type="radio">
-					<label for="star2-5"></label>
-
-					<input value="1" name="rate5" id="star1-5" type="radio">
-					<label for="star1-5"></label>
-				</div>
-			</div>
-			<div class="container-card">
-				<div class="card">
-					<div class="face front">
-						<img src="/img/destinos/des3.jpeg" alt="">
-						<h3>Perú</h3>
-					</div>
-					<div class="face back">
-						<h3>Perú</h3>
-						<p>Direccion: Lorem ipsum dolor sit</p>
-						<p>Numero: 333222111</p>
-						<div class="link">
-							<a href="/contacto.html">Contactar</a>
-						</div>
-					</div>
-				</div>
-				<div class="rating">
-					<input value="5" name="rate6" id="star5-6" type="radio">
-					<label for="star5-6"></label>
-
-					<input value="4" name="rate6" id="star4-6" type="radio">
-					<label for="star4-6"></label>
-
-					<input value="3" name="rate6" id="star3-6" type="radio">
-					<label for="star3-6"></label>
-
-					<input value="2" name="rate6" id="star2-6" type="radio">
-					<label for="star2-6"></label>
-
-					<input value="1" name="rate6" id="star1-6" type="radio">
-					<label for="star1-6"></label>
-				</div>
-			</div>
-		</div>
 		</section>
 
 		<main class="container">
@@ -591,7 +429,6 @@
 								<i class="fa-regular fa-heart"></i>
 							</div>
 						</div>
-						
 
 						<div class="content-card-tour">
 							<div class="container-location-price">
@@ -814,8 +651,6 @@
 
 		<!-- FOOTER -->
 		<footer>
-        <!-- FOOTER -->
-        <footer>
 			<div class="container footer-content">
 				<div class="columns-footer">
 					<div class="column">
@@ -890,7 +725,7 @@
 
                            <form class="newsletter">
                            <input type="email" placeholder="Tu email" required>
-                             <button type="submit" class="efecto-elevar">Suscribirse</button>
+                             <button type="submit">Suscribirse</button>
                              </form>
                       </div>
                       
@@ -902,6 +737,8 @@
 				</p>
 			</div>
 		</footer>
-    
-</body>
+
+		<script src="js/global.js"></script>
+		
+	</body>
 </html>
