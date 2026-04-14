@@ -39,7 +39,7 @@
 
 	.logo-text {
 		font-size: 22px;
-		color: #000;
+		color: var(--title-color);
 		font-weight: 700;
 	}
 
@@ -66,7 +66,7 @@
 
 			a {
 				text-decoration: none;
-				color: #333;
+				color: var(--text-color);
 				font-size: 15px;
 				font-weight: 600;
 
@@ -105,7 +105,7 @@
 
 		.sign-in {
 			padding: 12px 36px;
-			color: #333;
+			color: var(--text-color);
 			border: 2px solid var(--primary-color);
 		}
 
@@ -137,7 +137,7 @@
 .menu-responsive {
 	transition: all 0.5s;
 	position: absolute;
-	background-color: #fff;
+	background-color: var(--bg-color);
 	top: 0;
 	left: -100%;
 	width: 100%;
@@ -162,7 +162,7 @@
 
 		.logo-text {
 			font-size: 22px;
-			color: #000;
+			color: var(--text-color);
 			font-weight: 700;
 		}
 	}
@@ -178,7 +178,7 @@
 
 			a {
 				text-decoration: none;
-				color: #333;
+				color: var(--text-color);
 				font-size: 18px;
 				font-weight: 600;
 
@@ -205,4 +205,14 @@
 			font-size: 24px;
 		}
 	}
+}
+/*nuevo boton modo oscuro en header*/
+.btn-modo-oscuro{
+	width: 40px;
+	height: 40px;
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 50%;
+	transition: 0.4s;
+	cursor: pointer;
 }

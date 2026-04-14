@@ -52,7 +52,7 @@
 
 	.container-form {
 		padding: 20px;
-		background-color: #fff;
+		background-color: var(--bg-color);
 		border-radius: 5px;
 		box-shadow: var(--shadow);
 
@@ -197,7 +197,7 @@ main.container {
 	gap: 20px;
 
 	.container-filter {
-		background-color: #fff;
+		background-color: var(--bg-color);
 		box-shadow: var(--shadow);
 		border-radius: 10px;
 		padding: 20px 30px;
@@ -294,8 +294,7 @@ main.container {
 	.card-tour {
 		display: flex;
 		gap: 10px;
-
-		background-color: #fff;
+		background-color: var(--bg-color);
 		border-radius: 10px;
 		overflow: hidden;
 		box-shadow: var(--shadow);
@@ -380,7 +379,7 @@ main.container {
 				h3 {
 					font-size: 18px;
 					font-family: var(--title-font);
-					color: var(--text-color-dark);
+					color: var(--text-color);
 					font-weight: 500;
 				}
 

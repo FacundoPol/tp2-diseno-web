@@ -5,12 +5,12 @@
     align-items: center; /* Centrado vertical */
     min-height: 85vh; /* Ocupa casi todo el alto de la pantalla */
     padding: 20px;
-    background-color: #f4f7f6; /* Fondo suave para que resalte la caja */
+    background-color: var(--bg-color); /* color de la variable bg-color para alternar al modo oscuro */
 }
 
 /* El Recuadro Principal (La Tarjeta) */
 .contact-card {
-    background: white;
+    background: var(--bg-color);
     padding: 40px;
     width: 100%;
     max-width: 550px; /* Ancho máximo para que no se estire mucho en PC */
@@ -27,7 +27,7 @@
 
 .card-header .logo-text {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--title-color);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -61,7 +61,7 @@
 .form-group label {
     font-weight: bold;
     font-size: 1rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 input, textarea {
