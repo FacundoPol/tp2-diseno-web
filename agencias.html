@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Tours | Adventurero</title>
-		<link rel="stylesheet" href="css/global.css" />
-		<link rel="stylesheet" href="css/header.css" />
-		<link rel="stylesheet" href="css/tours.css" />
-		<link rel="stylesheet" href="css/footer.css" />
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/agencia2.css">
+    <title>Agencia</title>
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-			integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-	</head>
-	<body>
-		<header class="header container">
+</head>
+<body>
+    <header class="header container">
 			<a href="/" class="container-logo">
 				<img src="img/logo.png" alt="Logo" />
 				<span class="logo-text"> Destinova </span>
@@ -36,7 +26,7 @@
 						<a href="agencias.html">Agencia</a>
 					</li>
 					<li>
-						<a href="#">Precios</a>
+						<a href="precios.html">Precios</a>
 					</li>
 					<li>
 						<a href="contacto.html">Contacto</a>
@@ -93,567 +83,206 @@
 				</button>
 			</nav>
 		</header>
-
-		<section class="background-hero-banner">
-			<div class="container container-hero-banner">
-				<div class="column-1">
-					<h1>Elige tu paquete de viaje favorito</h1>
-
-					<p>
-						Explora nuestras increíbles ofertas de destinos con una
-						lista completa que incluye todos los lugares maravillosos
-						que puedes visitar.
-					</p>
+        <!-- SECTION -->
+		 <section class="section-cards">
+		 <h2 class="title-agencias">Nuestras Agencias</h2>
+         <div class="cards">
+			<div class="container-card">
+				<div class="card">
+					<div class="face front">
+						<img src="/img/destinos/des5.jpeg" alt="">
+						<h3>Mar del Plata</h3>
+					</div>
+					<div class="face back">
+						<h3>Mar del Plata</h3>
+						<p>Direccion: Lorem ipsum dolor sit</p>
+						<p>Numero: 333222111</p>
+						<div class="link">
+							<a href="/contacto.html">Contactar</a>
+						</div>
+					</div>
 				</div>
+				<div class="rating">
+					<input value="5" name="rate1" id="star5-1" type="radio">
+					<label for="star5-1"></label>
 
-				<div class="column-2 container-form">
-					<form action="#" class="form">
-						<h3 class="title">
-							<span class="icon">🔶</span> Buscar paquetes
-						</h3>
+					<input value="4" name="rate1" id="star4-1" type="radio">
+					<label for="star4-1"></label>
 
-						<div class="form-group">
-							<select name="destination" id="destination">
-								<option value="">Destino</option>
-								<option value="paris">París</option>
-								<option value="new-york">Nueva York</option>
-								<option value="tokyo">Tokio</option>
-							</select>
-						</div>
+					<input value="3" name="rate1" id="star3-1" type="radio">
+					<label for="star3-1"></label>
 
-						<div class="form-group">
-							<select name="guests" id="guests">
-								<option value="">Invitados</option>
-								<option value="1">1 Huésped</option>
-								<option value="2">2 Huéspedes</option>
-								<option value="3">3 Huéspedes</option>
-								<option value="4">4 o más</option>
-							</select>
-						</div>
+					<input value="2" name="rate1" id="star2-1" type="radio">
+					<label for="star2-1"></label>
 
-						<div class="form-group">
-							<label for="check-in">Fecha de Salida:</label>
-							<input type="date" name="check-in" id="check-in" />
-						</div>
-
-						<div class="form-group">
-							<label for="check-out">Fecha de LLegada:</label>
-							<input type="date" name="check-out" id="check-out" />
-						</div>
-
-						<button type="submit" class="btn-search">
-							Buscar ahora
-						</button>
-					</form>
+					<input value="1" name="rate1" id="star1-1" type="radio">
+					<label for="star1-1"></label>
 				</div>
 			</div>
+			<div class="container-card">
+				<div class="card">
+					<div class="face front">
+						<img src="/img/home/baner1.jpg" alt="">
+						<h3>Jujuy</h3>
+					</div>
+					<div class="face back">
+						<h3>Jujuy</h3>
+						<p>Direccion: Lorem ipsum dolor sit</p>
+						<p>Numero: 333222111</p>
+						<div class="link">
+							<a href="/contacto.html">Contactar</a>
+						</div>
+					</div>
+				</div>
+				<div class="rating">
+					<input value="5" name="rate2" id="star5-2" type="radio">
+					<label for="star5-2"></label>
+
+					<input value="4" name="rate2" id="star4-2" type="radio">
+					<label for="star4-2"></label>
+
+					<input value="3" name="rate2" id="star3-2" type="radio">
+					<label for="star3-2"></label>
+
+					<input value="2" name="rate2" id="star2-2" type="radio">
+					<label for="star2-2"></label>
+
+					<input value="1" name="rate2" id="star1-2" type="radio">
+					<label for="star1-2"></label>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<div class="face front">
+						<img src="/img/destinos/des4.jpeg" alt="">
+						<h3>Santa Cruz</h3>
+					</div>
+					<div class="face back">
+						<h3>Santa Cruz</h3>
+						<p>Direccion: Lorem ipsum dolor sit</p>
+						<p>Numero: 333222111</p>
+						<div class="link">
+							<a href="/contacto.html">Contactar</a>
+						</div>
+					</div>
+				</div>
+				<div class="rating">
+					<input value="5" name="rate3" id="star5-3" type="radio">
+					<label for="star5-3"></label>
+
+					<input value="4" name="rate3" id="star4-3" type="radio">
+					<label for="star4-3"></label>
+
+					<input value="3" name="rate3" id="star3-3" type="radio">
+					<label for="star3-3"></label>
+
+					<input value="2" name="rate3" id="star2-3" type="radio">
+					<label for="star2-3"></label>
+
+					<input value="1" name="rate3" id="star1-3" type="radio">
+					<label for="star1-3"></label>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<div class="face front">
+						<img src="/img/destinos/des2.jpg" alt="">
+						<h3>Buenos Aires</h3>
+					</div>
+					<div class="face back">
+						<h3>Buenos Aires</h3>
+						<p>Direccion: Lorem ipsum dolor sit</p>
+						<p>Numero: 333222111</p>
+						<div class="link">
+							<a href="/contacto.html">Contactar</a>
+						</div>
+					</div>
+				</div>
+				<div class="rating">
+					<input value="5" name="rate4" id="star5-4" type="radio">
+					<label for="star5-4"></label>
+
+					<input value="4" name="rate4" id="star4-4" type="radio">
+					<label for="star4-4"></label>
+
+					<input value="3" name="rate4" id="star3-4" type="radio">
+					<label for="star3-4"></label>
+
+					<input value="2" name="rate4" id="star2-4" type="radio">
+					<label for="star2-4"></label>
+
+					<input value="1" name="rate4" id="star1-4" type="radio">
+					<label for="star1-4"></label>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<div class="face front">
+						<img src="/img/destinos/des6.jpeg" alt="">
+						<h3>Mendoza</h3>
+					</div>
+					<div class="face back">
+						<h3>Mendoza</h3>
+						<p>Direccion: Lorem ipsum dolor sit</p>
+						<p>Numero: 333222111</p>
+						<div class="link">
+							<a href="/contacto.html">Contactar</a>
+						</div>
+					</div>
+				</div>
+				<div class="rating">
+					<input value="5" name="rate5" id="star5-5" type="radio">
+					<label for="star5-5"></label>
+
+					<input value="4" name="rate5" id="star4-5" type="radio">
+					<label for="star4-5"></label>
+
+					<input value="3" name="rate5" id="star3-5" type="radio">
+					<label for="star3-5"></label>
+
+					<input value="2" name="rate5" id="star2-5" type="radio">
+					<label for="star2-5"></label>
+
+					<input value="1" name="rate5" id="star1-5" type="radio">
+					<label for="star1-5"></label>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<div class="face front">
+						<img src="/img/destinos/des3.jpeg" alt="">
+						<h3>Perú</h3>
+					</div>
+					<div class="face back">
+						<h3>Perú</h3>
+						<p>Direccion: Lorem ipsum dolor sit</p>
+						<p>Numero: 333222111</p>
+						<div class="link">
+							<a href="/contacto.html">Contactar</a>
+						</div>
+					</div>
+				</div>
+				<div class="rating">
+					<input value="5" name="rate6" id="star5-6" type="radio">
+					<label for="star5-6"></label>
+
+					<input value="4" name="rate6" id="star4-6" type="radio">
+					<label for="star4-6"></label>
+
+					<input value="3" name="rate6" id="star3-6" type="radio">
+					<label for="star3-6"></label>
+
+					<input value="2" name="rate6" id="star2-6" type="radio">
+					<label for="star2-6"></label>
+
+					<input value="1" name="rate6" id="star1-6" type="radio">
+					<label for="star1-6"></label>
+				</div>
+			</div>
+		</div>
 		</section>
-
-		<main class="container">
-			<section class="main-tours">
-				<!-- RESPONSIVE: SELECT PARA ESCOGER FILTROS -->
-				<div class="container-select">
-					<!-- ICONO DE BUSQUEDA -->
-					<i class="fa-solid fa-search"></i>
-					<select name="filter" id="filter-select">
-						<option value="" disabled selected>
-							Escoge un filtro
-						</option>
-						<option value="all">Todos</option>
-						<option value="location">Ubicación</option>
-						<option value="type">Tipo</option>
-						<option value="price">Precio</option>
-						<option value="rating">Calificación</option>
-						<option value="duration">Duración</option>
-					</select>
-				</div>
-
-				<!-- CONTENEDOR DE FILTROS -->
-				<div class="container-filters">
-					<div class="container-filter" data-filter="location">
-						<h3>
-							<span class="icon">🔶</span>
-							Ubicación
-						</h3>
-						<div class="filter-group">
-							<span>Asia</span>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="india" name="india" />
-								<label for="india">Jujuy</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="japan" name="japan" />
-								<label for="japan">Mendoza</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="china" name="china" />
-								<label for="china">Tierra del Fuego</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input
-									type="checkbox"
-									id="thailand"
-									name="thailand"
-								/>
-								<label for="thailand">Santa Cruz</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="vietnam" name="vietnam" />
-								<label for="vietnam">Neuquen</label>
-							</div>
-						</div>
-
-						
-
-						<div class="filter-group">
-							<span>Ámerica</span>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="usa" name="usa" />
-								<label for="usa">Estados Unidos</label>
-							</div>
-
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="canada" name="canada" />
-								<label for="canada">Canadá</label>
-							</div>
-
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="mexico" name="mexico" />
-								<label for="mexico">México</label>
-							</div>
-						</div>
-
-						<div class="decoration"></div>
-					</div>
-
-					
-
-					<div class="container-filter" data-filter="price">
-						<h3>
-							<span class="icon">🔶</span>
-							Precio
-						</h3>
-
-						<div class="filter-group">
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="price-1" name="price-1" />
-								<label for="price-1">Menos de $500</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="price-2" name="price-2" />
-								<label for="price-2">$500 - $1000</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="price-3" name="price-3" />
-								<label for="price-3">$1000 - $2000</label>
-							</div>
-							<div class="filter-checkbox-group">
-								<input type="checkbox" id="price-4" name="price-4" />
-								<label for="price-4">Más de $2000</label>
-							</div>
-						</div>
-
-						<div class="decoration"></div>
-					</div>
-
-					<div class="container-filter" data-filter="duration">
-						<h3>
-							<span class="icon">🔶</span>
-							Duración
-						</h3>
-
-						<div class="filter-checkbox-group">
-							<input
-								type="checkbox"
-								id="three-days"
-								name="three-days"
-							/>
-							<label for="three-days">3 Días</label>
-						</div>
-
-						<div class="filter-checkbox-group">
-							<input
-								type="checkbox"
-								id="five-days"
-								name="five-days"
-							/>
-							<label for="five-days">5 Días</label>
-						</div>
-
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="week" name="week" />
-							<label for="week">1 Semana</label>
-						</div>
-
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="ten-days" name="ten-days" />
-							<label for="ten-days">10 Días</label>
-						</div>
-
-						<div class="filter-checkbox-group">
-							<input
-								type="checkbox"
-								id="two-weeks"
-								name="two-weeks"
-							/>
-							<label for="two-weeks">2 Semanas</label>
-						</div>
-
-						<div class="filter-checkbox-group">
-							<input
-								type="checkbox"
-								id="one-month"
-								name="one-month"
-							/>
-							<label for="one-month">1 Mes</label>
-						</div>
-
-						<div class="decoration"></div>
-					</div>
-
-					<div class="container-filter" data-filter="rating">
-						<h3><span class="icon">🔶</span> Calificación</h3>
-
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="rating-5" name="rating-5" />
-							<label for="rating-5" class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-							</label>
-						</div>
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="rating-4" name="rating-4" />
-							<label for="rating-4" class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star gray"></i>
-							</label>
-						</div>
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="rating-3" name="rating-3" />
-							<label for="rating-3" class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star gray"></i>
-								<i class="fa-solid fa-star gray"></i>
-							</label>
-						</div>
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="rating-2" name="rating-2" />
-							<label for="rating-2" class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star gray"></i>
-								<i class="fa-solid fa-star gray"></i>
-								<i class="fa-solid fa-star gray"></i>
-							</label>
-						</div>
-						<div class="filter-checkbox-group">
-							<input type="checkbox" id="rating-1" name="rating-1" />
-							<label for="rating-1" class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star gray"></i>
-								<i class="fa-solid fa-star gray"></i>
-								<i class="fa-solid fa-star gray"></i>
-								<i class="fa-solid fa-star gray"></i>
-							</label>
-						</div>
-
-						<div class="decoration"></div>
-					</div>
-				</div>
-
-				<!-- LISTA DE TOURS -->
-				<div class="container-tours">
-					<!-- 1 -->
-					<div class="card-tour">
-						<div class="container-img">
-							<img src="img/destinos/des5.jpeg" alt="Tour 1" />
-							<div class="container-icon">
-								<i class="fa-regular fa-heart"></i>
-							</div>
-						</div>
-
-						<div class="content-card-tour">
-							<div class="container-location-price">
-								<span class="location">
-									<i class="fa-solid fa-map-marker-alt"></i>
-									Mar del Plata
-								</span>
-								<span class="price">$200.000</span>
-							</div>
-							<div class="container-title">
-								<h3>Mar del Plata</h3>
-			
-							</div>
-							<div class="details">
-								<span class="capacity-person">
-									<i class="fa-solid fa-user-group"></i>
-									10 personas
-								</span>
-								<span class="time">
-									<i class="fa-solid fa-clock"></i>
-									5 días
-								</span>
-							</div>
-
-							<p class="description">
-								Explora una de las playas mas lindas de Argentina
-							</p>
-
-							<div class="reviews">
-								<span class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</span>
-								<span class="count-reviews">(22 Reseñas)</span>
-							</div>
-
-							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
-							</div>
-						</div>
-					</div>
-					<!-- 2 -->
-					<div class="card-tour">
-						<div class="container-img">
-							<img src="img/home/banerprincipal.webp" alt="Tour 2" />
-							<div class="container-icon">
-								<i class="fa-regular fa-heart"></i>
-							</div>
-						</div>
-
-						<div class="content-card-tour">
-							<div class="container-location-price">
-								<span class="location">
-									<i class="fa-solid fa-map-marker-alt"></i>
-									Jujuy
-								</span>
-								<span class="price">$120.000</span>
-							</div>
-							<div class="container-title">
-								<h3>Purmamarca </h3>
-								
-							</div>
-							<div class="details">
-								<span class="capacity-person">
-									<i class="fa-solid fa-user-group"></i>
-									12 Personas
-								</span>
-								<span class="time">
-									<i class="fa-solid fa-clock"></i>
-									4 días
-								</span>
-							</div>
-
-							<p class="description">
-								Guarda memoriosos recuerdos en el norte Argentino
-							</p>
-
-							<div class="reviews">
-								<span class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</span>
-								<span class="count-reviews">(30 Reseñas)</span>
-							</div>
-
-							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
-							</div>
-						</div>
-					</div>
-					<!-- 3 -->
-					<div class="card-tour">
-						<div class="container-img">
-							<img src="img/destinos/des4.jpeg" alt="Tour 3" />
-							<div class="container-icon">
-								<i class="fa-regular fa-heart"></i>
-							</div>
-						</div>
-
-						<div class="content-card-tour">
-							<div class="container-location-price">
-								<span class="location">
-									<i class="fa-solid fa-map-marker-alt"></i>
-									Santa Cruz
-								</span>
-								<span class="price">$450</span>
-							</div>
-							<div class="container-title">
-								<h3>Glaciar Perito moreno</h3>
-								
-							</div>
-							<div class="details">
-								<span class="capacity-person">
-									<i class="fa-solid fa-user-group"></i>
-									8 Personas
-								</span>
-								<span class="time">
-									<i class="fa-solid fa-clock"></i>
-									5 días
-								</span>
-							</div>
-
-							<p class="description">
-								Bellisimos paisajes en el sur de nuetra Argentina
-							</p>
-
-							<div class="reviews">
-								<span class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</span>
-								<span class="count-reviews">(10 Reseñas)</span>
-							</div>
-
-							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
-							</div>
-						</div>
-					</div>
-					<!-- 4 -->
-					<div class="card-tour">
-						<div class="container-img">
-							<img src="img/destinos/des1.jpeg" alt="Tour 4" />
-							<div class="container-icon">
-								<i class="fa-regular fa-heart"></i>
-							</div>
-						</div>
-
-						<div class="content-card-tour">
-							<div class="container-location-price">
-								<span class="location">
-									<i class="fa-solid fa-map-marker-alt"></i>
-									Jujuy
-								</span>
-								<span class="price">$140.000</span>
-							</div>
-							<div class="container-title">
-								<h3>Salinas Grandes</h3>
-								<span class="type">Cultura</span>
-							</div>
-							<div class="details">
-								<span class="capacity-person">
-									<i class="fa-solid fa-user-group"></i>
-									12 Personas
-								</span>
-								<span class="time">
-									<i class="fa-solid fa-clock"></i>
-									2 días
-								</span>
-							</div>
-
-							<p class="description">
-								Unas de las maravillas de nuesto norte Argentino
-							</p>
-
-							<div class="reviews">
-								<span class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</span>
-								<span class="count-reviews">(8 Reseñas)</span>
-							</div>
-
-							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
-							</div>
-						</div>
-					</div>
-					<!-- 5 -->
-					<div class="card-tour">
-						<div class="container-img">
-							<img src="img/destinos/des6.jpeg" alt="Tour 5" />
-							<div class="container-icon">
-								<i class="fa-regular fa-heart"></i>
-							</div>
-						</div>
-
-						<div class="content-card-tour">
-							<div class="container-location-price">
-								<span class="location">
-									<i class="fa-solid fa-map-marker-alt"></i>
-									Mendoza
-								</span>
-								<span class="price">$200.000</span>
-							</div>
-							<div class="container-title">
-								<h3>Viñedos</h3>
-								<span class="type">Aventura</span>
-							</div>
-							<div class="details">
-								<span class="capacity-person">
-									<i class="fa-solid fa-user-group"></i>
-									20 Personas
-								</span>
-								<span class="time">
-									<i class="fa-solid fa-clock"></i>
-									3 días
-								</span>
-							</div>
-
-							<p class="description">
-								Lugar hermoso para pasear y desgutar vinos autoctonos argentinos
-							</p>
-
-							<div class="reviews">
-								<span class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</span>
-								<span class="count-reviews">(40 Reseñas)</span>
-							</div>
-
-							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
-							</div>
-						</div>
-					</div>
-					<!-- 6 -->
-					
-				</div>
-			</section>
-
-			<section class="container-pagination">
-				<a href="#" class="active">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
-				<a href="#" class="next">
-					<i class="fa-solid fa-chevron-right"></i>
-				</a>
-			</section>
-		</main>
-
-		<!-- FOOTER -->
-		<footer>
+        <!-- FOOTER -->
+        <footer>
 			<div class="container footer-content">
 				<div class="columns-footer">
 					<div class="column">
@@ -740,8 +369,6 @@
 				</p>
 			</div>
 		</footer>
-
-		<script src="js/global.js"></script>
-		
-	</body>
+    
+</body>
 </html>
