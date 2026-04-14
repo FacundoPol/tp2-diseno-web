@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/tours.css" />
 		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/animaciones.css">
 
 		<link
 			rel="stylesheet"
@@ -46,10 +47,10 @@
 
 			<ul class="container-sign">
 				<li class="sign-item">
-					<a href="#" class="sign-in">Entrar</a>
+					<a href="#" class="sign-in efecto-achicar">Entrar</a>
 				</li>
 				<li class="sign-item">
-					<a href="#" class="sign-up">Registrarse</a>
+					<a href="#" class="sign-up efecto-achicar">Registrarse</a>
 				</li>
 			</ul>
 			<!-- se agrega el boton del modo oscuro-->
@@ -81,10 +82,10 @@
 						<a href="contacto.html">Contactos</a>
 					</li>
 					<li>
-						<a href="#" class="sign-in">Entrar</a>
+						<a href="#" class="sign-in efecto-achicar">Entrar</a>
 					</li>
 					<li>
-						<a href="#" class="sign-up">Registrarse</a>
+						<a href="#" class="sign-up efecto-achicar">Registrarse</a>
 					</li>
 				</ul>
 
@@ -93,6 +94,61 @@
 				</button>
 			</nav>
 		</header>
+
+		<section class="background-hero-banner">
+			<div class="container container-hero-banner">
+				<div class="column-1">
+					<h1>Elige tu paquete de viaje favorito</h1>
+
+					<p>
+						Explora nuestras increíbles ofertas de destinos con una
+						lista completa que incluye todos los lugares maravillosos
+						que puedes visitar.
+					</p>
+				</div>
+
+				<div class="column-2 container-form">
+					<form action="#" class="form">
+						<h3 class="title">
+							<span class="icon">🔶</span> Buscar paquetes
+						</h3>
+
+						<div class="form-group">
+							<select name="destination" id="destination">
+								<option value="">Destino</option>
+								<option value="paris">París</option>
+								<option value="new-york">Nueva York</option>
+								<option value="tokyo">Tokio</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<select name="guests" id="guests">
+								<option value="">Invitados</option>
+								<option value="1">1 Huésped</option>
+								<option value="2">2 Huéspedes</option>
+								<option value="3">3 Huéspedes</option>
+								<option value="4">4 o más</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="check-in">Fecha de Salida:</label>
+							<input type="date" name="check-in" id="check-in" />
+						</div>
+
+						<div class="form-group">
+							<label for="check-out">Fecha de LLegada:</label>
+							<input type="date" name="check-out" id="check-out" />
+						</div>
+
+						<button type="submit" class="btn-search efecto-agrandar">
+							Buscar ahora
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
 
 		<main class="container">
 			<div style="margin: 40px 0; text-align: center;">
@@ -152,8 +208,8 @@
 							</div>
 
 							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
+								<a href="#" class="btn btn-outline efecto-elevar">Detalles</a>
+								<a href="#" class="btn btn-solid efecto-elevar">Reservar</a>
 							</div>
 						</div>
 					</div>
@@ -205,8 +261,8 @@
 							</div>
 
 							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
+								<a href="#" class="btn btn-outline efecto-elevar">Detalles</a>
+								<a href="#" class="btn btn-solid efecto-elevar">Reservar</a>
 							</div>
 						</div>
 					</div>
@@ -258,8 +314,8 @@
 							</div>
 
 							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
+								<a href="#" class="btn btn-outline efecto-elevar">Detalles</a>
+								<a href="#" class="btn btn-solid efecto-elevar">Reservar</a>
 							</div>
 						</div>
 					</div>
@@ -311,8 +367,8 @@
 							</div>
 
 							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
+								<a href="#" class="btn btn-outline efecto-elevar">Detalles</a>
+								<a href="#" class="btn btn-solid efecto-elevar">Reservar</a>
 							</div>
 						</div>
 					</div>
@@ -364,8 +420,8 @@
 							</div>
 
 							<div class="footer-card-tour">
-								<a href="#" class="btn btn-outline">Detalles</a>
-								<a href="#" class="btn btn-solid">Reservar</a>
+								<a href="#" class="btn btn-outline efecto-elevar">Detalles</a>
+								<a href="#" class="btn btn-solid efecto-elevar">Reservar</a>
 							</div>
 						</div>
 					</div>
@@ -375,11 +431,11 @@
 			</section>
 
 			<section class="container-pagination">
-				<a href="#" class="active">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
-				<a href="#" class="next">
+				<a href="#" class="active efecto-agrandar">1</a>
+				<a href="#" class="efecto-agrandar">2</a>
+				<a href="#" class="efecto-agrandar">3</a>
+				<a href="#" class="efecto-agrandar">4</a>
+				<a href="#" class="next efecto-agrandar">
 					<i class="fa-solid fa-chevron-right"></i>
 				</a>
 			</section>

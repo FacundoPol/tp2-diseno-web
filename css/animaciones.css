@@ -1,0 +1,77 @@
+/* EFECTO 1: Achica hacia el centro */
+.efecto-achicar {
+    transition: transform 0.3s ease-in-out !important;
+    display: inline-block;
+}
+
+.efecto-achicar:hover {
+    transform: scale(0.9) !important;
+}
+
+/* EFECTO 2: Agranda desde el centro*/
+.efecto-agrandar {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+.efecto-agrandar:hover {
+    transform: scale(1.1);
+}
+
+/* EFECTO 3: Ghost (Opacidad suave) */
+.efecto-ghost {
+    transition: opacity 0.3s ease;
+}
+.efecto-ghost:hover {
+    opacity: 0.6; 
+}
+
+/* EFECTO 4: Elevación con Sombra
+   Hace que el botón parezca subir y proyectar una sombra */
+.efecto-elevar {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+.efecto-elevar:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* EFECTO 5: Relleno Deslizante
+    Para funcionar requiere que el botón tenga un fondo inicial. 
+   El color cambia de izquierda a derecha. */
+.efecto-relleno {
+    position: relative; 
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.4s ease;
+    vertical-align: middle; 
+}
+
+.efecto-relleno::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 100%;
+    background: rgba(43, 91, 223, 0.2); 
+    transition: width 0.4s ease;
+    z-index: -1; 
+}
+
+.efecto-relleno:hover::before {
+    width: 100%; 
+}
+
+/* EFECTO 6: Borde Pulsante 
+   Crea un aura que parpadea alrededor del botón */
+.efecto-pulso:hover {
+    animation: pulso-anim 1.5s infinite;
+}
+
+@keyframes pulso-anim {
+    0% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(52, 152, 219, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); }
+}
