@@ -56,8 +56,10 @@
 					<a href="#" class="sign-up efecto-achicar">Registrarse</a>
 				</li>
 			</ul>
-			<!-- se agrega el boton del modo oscuro-->
-			 <button id="btn-modo-oscuro" class="btn-modo-oscuro">
+		
+
+<button id="btn-modo-oscuro" class="btn-modo-oscuro">
+			
 				<i class="fa-solid fa-moon"></i>
 			 </button>
 			 <!-------------------->
@@ -103,10 +105,16 @@
        			 <p style="color: var(--text-color); margin-top: 10px;">
             	Encontrá el paquete que mejor se adapte a tu próxima aventura.
         		</p>
+
+				<div class="mt-3">
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalPhishing">
+                <i class="fa-solid fa-shield-virus"></i> Simulación de phishing
+            </button>
+        </div>
     		</div>
 			<section class="container my-5">
     <div class="table-responsive">
-        <table class="table table-hover align-middle shadow-sm">
+        <table class="table table-hover align-middle shadow-sm" id="tabla-precios">
             <thead class="table-dark">
                 <tr>
                     <th scope="col">Destino</th>
@@ -316,23 +324,63 @@
 
 		<script src="js/global.js"></script>
 		<script>
-		$(document).ready(function(){
+$(document).ready(function(){
    
-   			 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-   			 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    		    return new bootstrap.Tooltip(tooltipTriggerEl)
-   		 });
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
 
- 
- 		   $('#tabla-precios tr').hover(
-    	    function() {
-        	    $(this).addClass('table-primary animate__animated animate__pulse');
-     	   }, 
-    	    function() {
-      	      $(this).removeClass('table-primary animate__animated animate__pulse');
-      	  }
-   		 );
-		});
-		</script>
+    
+    $('#tabla-precios tr').hover(
+        function() {
+            $(this).addClass('table-primary animate__animated animate__pulse');
+        }, 
+        function() {
+            $(this).removeClass('table-primary animate__animated animate__pulse');
+        }
+    );
+
+    
+    $('#btnConfirmarPhishing').on('click', function() {
+       
+        $(this).html('<span class="spinner-border spinner-border-sm"></span> Cargando simulación...');
+        
+        setTimeout(function() {
+            
+            window.location.href = "./banco.html";
+        }, 1500); 
+    });
+});
+</script>
+
+		<div class="modal fade" id="modalPhishing" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title"><i class="fa-solid fa-triangle-exclamation"></i> Módulo Educativo: Phishing</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fw-bold text-danger text-center">¡Atención! Estás por entrar a una zona de pruebas.</p>
+                <p>El phishing es una técnica de engaño para robar datos. Antes de ir a la siguiente página, recuerda identificar estas señales de fraude:</p>
+                
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item"><i class="fa-solid fa-link text-primary"></i> URL sospechosa (ej: "destin0va.com" en vez de "destinova.com")</li>
+                    <li class="list-group-item"><i class="fa-solid fa-envelope-open-text text-primary"></i> Errores de ortografía o gramática.</li>
+                    <li class="list-group-item"><i class="fa-solid fa-clock text-primary"></i> Sentido de urgencia extrema.</li>
+                </ul>
+                
+                <div class="alert alert-info py-2">
+                    <small><strong>Nota:</strong> No ingreses datos reales en la siguiente página.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="btnConfirmarPhishing" class="btn btn-danger">Entendido, ir a la simulación</button>
+            </div>
+        </div>
+    </div>
+</div>
 	</body>
 </html>
