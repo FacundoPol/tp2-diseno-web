@@ -1,6 +1,6 @@
 $(function()
 {
-    $(".card").on("click",function(){
+    $(".flip-card").on("click",function(){
         $(this).toggleClass("girar");
     });
 });

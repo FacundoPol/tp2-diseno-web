@@ -10,89 +10,77 @@
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/animaciones.css">
 		<link rel="stylesheet" href="css/agencia.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 		<title>Agencia</title>
 
 </head>
 <body>
-    <header class="header container">
-			<a href="/" class="container-logo">
-				<img src="img/logo.png" alt="Logo" />
-				<span class="logo-text"> Destinova </span>
+    <nav class="navbar navbar-expand-lg ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">
+				<img src="img/logo.png" alt="Logo">
+				<span class="logo-text" style="font-weight: 500;">Destinova</span>
 			</a>
-
-			<nav class="nav-links">
-				<ul>
-					<li>
-						<a href="destinos.html">Destinos</a>
-					</li>
-					<li>
-						<a href="agencias.html">Agencia</a>
-					</li>
-					<li>
-						<a href="precios.html">Precios</a>
-					</li>
-					<li>
-						<a href="contacto.html">Contacto</a>
-					</li>
-				</ul>
-			</nav>
-
-			<ul class="container-sign">
-				<li class="sign-item">
-					<a href="#" class="sign-in efecto-achicar">Entrar</a>
-				</li>
-				<li class="sign-item">
-					<a href="#" class="sign-up efecto-achicar">Registrarse</a>
-				</li>
-			</ul>
-			<!-- se agrega el boton del modo oscuro-->
-			 <button id="btn-modo-oscuro" class="btn-modo-oscuro">
-				<i class="fa-solid fa-moon"></i>
-			 </button>
-			 <!-------------------->
-			<button class="btn-bars">
-				<i class="fa-solid fa-bars-staggered"></i>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-
-			<nav class="menu-responsive">
-				<a href="/" class="container-logo-responsive">
-					<img src="img/logo.png" alt="Logo" />
-					<span class="logo-text"> Adventurero </span>
-				</a>
-
-				<ul>
-					<li>
-						<a href="destinos.html">Destinos</a>
+			<div class="collapse navbar-collapse gap-3 align-items-center" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Destinos
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">
+									<i class="fa-solid fa-sun"></i>
+									Norte</a>
+							</li>
+							<li><a class="dropdown-item" href="#">
+									<i class="fa-solid fa-person-skiing"></i>
+									Patagonia</a>
+							</li>
+							<li><a class="dropdown-item" href="./destinos.html">
+									<i class="fa-solid fa-ellipsis"></i>
+									Ver todos</a>
+							</li>
+						</ul>
 					</li>
-					<li>
-						<a href="agencias.html">Agencia</a>
+					<li class="nav-item">
+						<a class="nav-link" href="./agencias.html">Agencia</a>
 					</li>
-					<li>
-						<a href="#">Precios</a>
+					<li class="nav-item">
+						<a class="nav-link" href="./precios.html">Precios</a>
 					</li>
-					<li>
-						<a href="contacto.html">Contactos</a>
-					</li>
-					<li>
-						<a href="#" class="sign-in efecto-achicar">Entrar</a>
-					</li>
-					<li>
-						<a href="#" class="sign-up efecto-achicar">Registrarse</a>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Contacto</a>
 					</li>
 				</ul>
-
-				<button class="btn-close">
-					<i class="fa-solid fa-xmark"></i>
+				<ul class="container-sign mt-3 d-flex list-unstyled gap-3">
+					<li class="sign-item">
+						<a href="#" class="btn btn-outline-primary sign-in efecto-achicar"
+							style="text-decoration: none;">Entrar</a>
+					</li>
+					<li class="sign-item">
+						<a href="#" class="btn btn-primary sign-up efecto-achicar text-white"
+							style="text-decoration: none;">Registrarse</a>
+					</li>
+				</ul>
+				<!-- se agrega el boton del modo oscuro-->
+				<button id="btn-modo-oscuro" class="btn-modo-oscuro">
+					<i class="fa-solid fa-moon"></i>
 				</button>
-			</nav>
-		</header>
+			</div>
+		</div>
+	</nav>
         <!-- SECTION -->
 		 <section class="section-cards">
 		 <h2 class="title-agencias">Nuestras Agencias</h2>
          <div class="cards">
 			<div class="container-card">
-				<div class="card">
+				<div class="flip-card">
 					<div class="face front">
 						<img src="img/destinos/des5.jpeg" alt="">
 						<h3>Mar del Plata</h3>
@@ -115,7 +103,7 @@
         		</div>
 			</div>
 			<div class="container-card">
-				<div class="card">
+				<div class="flip-card">
 					<div class="face front">
 						<img src="img/home/baner1.jpg" alt="">
 						<h3>Jujuy</h3>
@@ -138,7 +126,7 @@
         		</div>
 			</div>
 			<div class="container-card">
-				<div class="card">
+				<div class="flip-card">
 					<div class="face front">
 						<img src="img/destinos/des4.jpeg" alt="">
 						<h3>Santa Cruz</h3>
@@ -161,7 +149,7 @@
         		</div>
 			</div>
 			<div class="container-card">
-				<div class="card">
+				<div class="flip-card">
 					<div class="face front">
 						<img src="img/destinos/des2.jpg" alt="">
 						<h3>Buenos Aires</h3>
@@ -184,7 +172,7 @@
         		</div>
 			</div>
 			<div class="container-card">
-				<div class="card">
+				<div class="flip-card">
 					<div class="face front">
 						<img src="img/destinos/des6.jpeg" alt="">
 						<h3>Mendoza</h3>
@@ -207,7 +195,7 @@
         		</div>
 			</div>
 			<div class="container-card">
-				<div class="card">
+				<div class="flip-card">
 					<div class="face front">
 						<img src="img/destinos/des3.jpeg" alt="">
 						<h3>Perú</h3>
@@ -232,94 +220,88 @@
 		</div>
 		</section>
         <!-- FOOTER -->
-        <footer>
-			<div class="container footer-content">
-				<div class="columns-footer">
-					<div class="column">
-						<a href="/" class="container-logo">
-							<img src="img/logo.png" alt="Logo" />
-							<span class="logo-text"> Destinova </span>
-						</a>
-
-						<div class="container-social-links">
-							<span>Síguenos: </span>
-							<div class="links">
-								<a href="#">
-									<i class="fab fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</div>
+        <div class="footer bg-dark text-white py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-6 col-lg-3">
+					<a href="/" class="container-logo d-flex gap-3" style="text-decoration: none;">
+						<img src="img/logo.png" alt="Logo">
+						<span>Destinova</span>
+					</a>
+					<div class="mt-4">
+						<span>Siguenos </span>
+						<div class="links mt-2 d-flex gap-3">
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
 						</div>
 					</div>
-
-					<div class="column">
-						<span> Sobre Nosotros </span>
-
-						<ul>
-							<li>
-								<a href="#">Nuestra Historia</a>
-							</li>
-							<li>
-								<a href="#">Blog Viajes y consejos</a>
-							</li>
-							<li>
-								<a href="#">Trabaja con nosotros</a>
-							</li>
-							<li>
-								<a href="#">Términos y condiciones</a>
-							</li>
-							<li>
-								<a href="#">Preguntas Frecuentes</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="column">
-						<span>Soporte</span>
-
-						<ul>
-							<li>
-								<a href="#">Soporte al cliente</a>
-							</li>
-							<li>
-								<a href="#">Políticas de privacidad</a>
-							</li>
-							<li>
-								<a href="#">Contáctanos</a>
-							</li>
-						</ul>
-                        
-					</div>
-                      <div class="column">
-                         <span>Ubicación</span>
-
-                            <iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"loading="lazy"></iframe>
-                      </div>
-					<div class="column">
-                       <span>Suscribite</span>
-
-                           <p>Recibí ofertas y novedades</p>
-
-                           <form class="newsletter">
-                           <input type="email" placeholder="Tu email" required>
-                             <button type="submit" class="efecto-elevar">Suscribirse</button>
-                             </form>
-                      </div>
-                      
+				</div>
+				<div class="col col-md-6 col-lg-3 mt-2">
+					<span>Sobre nosotros</span>
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Nuestra Historia</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Blog Viajes y consejos</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Trabaja con nosotros</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Términos y condiciones</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Preguntas Frecuentes</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-md-6 col-lg-3 mt-2">
+					<span>Soporte</span>
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Soporte al cliente</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Politicas de privacidad</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Contactanos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-md-6 col-lg-3 mt-2">
+					<span>Suscribite</span>
+					<p class="text-white-50">Recibí ofertas y novedades</p>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Tu email" aria-label="First name">
+						<button type="submit" class="btn btn-primary">Sign in</button>
 					</div>
 				</div>
+				<div class="col col-md-6 col-lg-6 mt-5" id="mapa">
+					<div class="ratio ratio-16x9">
+						<iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"
+							loading="lazy"></iframe>
+					</div>
 
+				</div>
+			</div>
+			<div class="col text-center mt-5">
 				<p class="copyright">
-					&copy; 2024 Adventurero | Desarrollado por Roberto Andrade
+					&copy; 2026 Adventurero | Desarrollado por Grupo_Web
 				</p>
 			</div>
-		</footer>
+		</div>
+	</div>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/global.js"></script>
 	<script src="js/agencias.js"></script>
 </body>
