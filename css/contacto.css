@@ -1,155 +1,50 @@
-/* --- Estilos Base para la Caja y Centrado --- */
-.contact-page {
-    display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    min-height: 85vh; /* Ocupa casi todo el alto de la pantalla */
+/* Evita que los campos se pongan rojos apenas carga la página */
+#formularioContacto .form-control:invalid {
+    border-color: #dee2e6 ; /* Gris estándar */
+    background-image: none ; /* Quita el icono de advertencia */
+    box-shadow: none ;
+}
+
+/* Solo permite el rojo si explícitamente tiene la clase is-invalid o si se intentó enviar */
+#formularioContacto .is-invalid, 
+#formularioContacto.was-validated .form-control:invalid {
+    border-color: #dc3545 ; /* Rojo de error */
+    background-image: url("data:image/svg+xml...") ; /* Reinstala el icono si es necesario */
+}
+/* Contenedor principal con imagen de fondo */
+.seccion-contacto {
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('/img/home/baner1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto de movimiento lento al hacer scroll */
     padding: 20px;
-    background-color: var(--bg-color); /* color de la variable bg-color para alternar al modo oscuro */
 }
 
-/* El Recuadro Principal (La Tarjeta) */
-.contact-card {
-    background: var(--bg-color);
-    padding: 40px;
-    width: 100%;
-    max-width: 550px; /* Ancho máximo para que no se estire mucho en PC */
-    border: 3px solid #000; /* REBORDE NEGRO NÍTIDO ESTILO NEWSPAPER */
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.1); /* Sombra sólida retro */
-    border-radius: 5px;
+/* Tarjeta moderna con estilo "Glassmorphism" suave */
+.glass-card {
+    background: rgba(255, 255, 255, 0.92); /* Casi blanco pero deja pasar un poquito de luz */
+    border: none; /* Chau al borde negro grueso, ahora es más fino */
+    border-radius: 20px; /* Bordes bien redondeados */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) ; /* Sombra profunda */
 }
 
-/* Cabecera de la Tarjeta */
-.card-header {
-    text-align: center;
-    margin-bottom: 30px;
+/* Ajuste para los inputs para que se vean más integrados */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 12px;
 }
 
-.card-header .logo-text {
-    font-size: 0.9rem;
-    color: var(--title-color);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+/* Estilo del botón para que destaque */
+#botonEnviar {
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.card-header h1 {
-    font-family: 'Playfair Display', serif; /* O la fuente serif que uses */
-    font-size: 2.5rem;
-    margin: 10px 0;
-}
-
-.news-line {
-    width: 60px;
-    height: 3px;
-    background: #000;
-    margin: 10px auto;
-}
-
-/* --- Formulario y Grupos de Entrada --- */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group label {
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--text-color);
-}
-
-input, textarea {
-    padding: 12px 15px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: all 0.3s;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #333;
-    background-color: #fff;
-}
-
-/* --- VALIDACIÓN EN TIEMPO REAL PRO (REQUERIDO) --- */
-/* Solo aplica cuando el usuario ha empezado a escribir (placeholder no visible) */
-input:not(:placeholder-shown):valid, 
-textarea:not(:placeholder-shown):valid {
-    border-color: #27ae60; /* Borde VERDE si es válido */
-    background-color: #eafaf1;
-}
-
-input:not(:placeholder-shown):invalid, 
-textarea:not(:placeholder-shown):invalid {
-    border-color: #e74c3c; /* Borde ROJO si es inválido */
-    background-color: #fdedec;
-}
-
-/* --- Botón Principal y Spinner --- */
-.btn-primary {
-    background-color: #000;
-    color: white;
-    padding: 15px;
-    border: 2px solid #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-    margin-top: 10px;
-}
-
-.btn-primary:hover {
-    background-color: white;
-    color: #000;
-}
-
-.spinner {
-    width: 20px; height: 20px;
-    border: 3px solid rgba(255,255,255,0.3);
-    border-top-color: white;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    display: none; /* Oculto por defecto */
-    margin-left: 10px;
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* --- MODAL PRO (Empieza oculto) --- */
-.modal-overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
-    display: none; /* ESENCIAL: Empieza oculto */
-    place-items: center;
-    z-index: 9999;
-}
-
-.modal-overlay.active { display: grid; }
-
-.modal-card {
-    background: white;
-    padding: 40px;
-    border: 3px solid #000;
-    text-align: center;
-    max-width: 400px;
-    animation: slideIn 0.4s ease;
-}
-
-@keyframes slideIn {
-    from { transform: translateY(-30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+#botonEnviar:hover {
+    transform: translateY(-2px); /* Pequeño salto al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
