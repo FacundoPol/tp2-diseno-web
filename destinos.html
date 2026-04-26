@@ -15,74 +15,64 @@
 </head>
  
 <body>
-    <header class="header container">
-			<a href="/" class="container-logo">
-				<img src="img/logo.png" alt="Logo" />
-				<span class="logo-text"> Destinova </span>
+		<nav class="navbar navbar-expand-lg ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">
+				<img src="img/logo.png" alt="Logo">
+				<span class="logo-text" style="font-weight: 500;">Destinova</span>
 			</a>
-
-			<nav class="nav-links">
-				<ul>
-					<li>
-						<a href="destinos.html">Destinos</a>
-					</li>
-					<li>
-						<a href="agencias.html">Agencia</a>
-					</li>
-					<li>
-						<a href="precios.html">Precios</a>
-					</li>
-					<li>
-						<a href="contacto.html">Contacto</a>
-					</li>
-				</ul>
-			</nav>
-
-			<ul class="container-sign">
-				<li class="sign-item">
-					<a href="#" class="sign-in efecto-achicar" >Entrar</a>
-				</li>
-				<li class="sign-item">
-					<a href="#" class=" sign-up efecto-achicar">Registrarse</a>
-				</li>
-			</ul>
-			 <button id="btn-modo-oscuro" class="btn-modo-oscuro">
-				<i class="fa-solid fa-moon"></i>
-			 </button>
-			 <!-------------------->
-			<button class="btn-bars">
-				<i class="fa-solid fa-bars-staggered"></i>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-
-			<nav class="menu-responsive">
-				<a href="/" class="container-logo-responsive">
-					<img src="img/logo.png" alt="Logo" />
-					<span class="logo-text"> Adventurero </span>
-				</a>
-
-				<ul>
-					<li>
-						<a href="#">Destinos</a>
+			<div class="collapse navbar-collapse gap-3 align-items-center" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Destinos
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">
+									<i class="fa-solid fa-sun"></i>
+									Norte</a>
+							</li>
+							<li><a class="dropdown-item" href="#">
+									<i class="fa-solid fa-person-skiing"></i>
+									Patagonia</a>
+							</li>
+							<li><a class="dropdown-item" href="./destinos.html">
+									<i class="fa-solid fa-ellipsis"></i>
+									Ver todos</a>
+							</li>
+						</ul>
 					</li>
-					<li>
-						<a href="#">Agencia</a>
+					<li class="nav-item">
+						<a class="nav-link" href="./agencias.html">Agencia</a>
 					</li>
-					<li>
-						<a href="#">Precios</a>
+					<li class="nav-item">
+						<a class="nav-link" href="./precios.html">Precios</a>
 					</li>
-					<li>
-						<a href="#" class="sign-in">Entrar</a>
-					</li>
-					<li>
-						<a href="#" class="sign-up">Registrarse</a>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Contacto</a>
 					</li>
 				</ul>
-
-				<button class="btn-close">
-					<i class="fa-solid fa-xmark"></i>
+				<ul class="container-sign mt-3 d-flex list-unstyled gap-3">
+					<li class="sign-item">
+						<a href="#" class="btn btn-outline-primary sign-in efecto-achicar"
+							style="text-decoration: none;">Entrar</a>
+					</li>
+					<li class="sign-item">
+						<a href="#" class="btn btn-primary sign-up efecto-achicar text-white"
+							style="text-decoration: none;">Registrarse</a>
+					</li>
+				</ul>
+				<button id="btn-modo-oscuro" class="btn-modo-oscuro">
+					<i class="fa-solid fa-moon"></i>
 				</button>
-			</nav>
-		</header>
+			</div>
+		</div>
+	</nav>
 
         <main class="container my-5">
     <div class="newspaper-header text-center mb-5">
