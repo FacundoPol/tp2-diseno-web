@@ -1,0 +1,250 @@
+:root {
+    --naranja-z: #FF6B00;
+    --violeta-z: #7841ba;
+    --fondo-gris: #fbf9f8;
+}
+
+main {
+    margin-top: 80px;
+}
+
+body {
+    font-family: sans-serif;
+}
+.navbar .container .container-logo{
+    margin-left: -200px;
+    padding-left: 0;
+}
+.container-logo img{
+	width: 200px;
+	height: auto;
+    display: block;
+    object-fit: cover;
+    
+}
+.text-naranja {
+    color: var(--naranja-z);
+}
+
+.bg-violeta {
+    background-color: var(--violeta-z);
+    color: white;
+}
+
+.btn-outline-violeta {
+    border: 2px solid var(--violeta-z);
+    color: var(--violeta-z);
+    font-weight: bold;
+}
+
+.btn-outline-violeta:hover {
+    background-color: var(--violeta-z);
+    color: white;
+}
+.btn-hero-violeta{
+    box-shadow: 0 10px 15px -3px rgba(120,65,186,0.2) !important;
+}
+.nav-link-z {
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.nav-link-z:hover {
+    color: var(--naranja-z);
+}
+
+.hero-section {
+    padding: 80px 0;
+}
+
+.card-action {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-action:hover {
+    transform: translateY(-5px);
+    border: 1px solid rgba(120, 65, 186, 0.1) !important;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: rgba(120, 65, 186, 0.1);
+    color: var(--violeta-z);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.pointer:hover {
+    color: var(--naranja-z);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Para que las tarjetas de noticias no se peguen en móvil */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 40px 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #fbf9f8;
+    color: #1b1c1c;
+}
+
+.container-nav span {
+    color: #2a0054;
+    font-size: 0.875rem;
+}
+
+.container-hablemos h2 {
+    color: #1b1c1c;
+}
+
+.container-hablemos h3 {
+    color: #7841ba;
+    transition: color 0.3s ease;
+}
+.card:hover h3{
+    color: var(--naranja-z) !important
+}
+.section-impacto {
+    background-color: #2a0054;
+}
+
+.mitad-impacto {
+    background: rgba(186, 131, 255, 0.1);
+    transform: skewX(-12deg) translateX(100px);
+}
+
+.container-cuidamos {
+    z-index: 10;
+}
+.blog-img-wrapper{
+    aspect-ratio: 16/9;
+}
+.blog-img-wrapper img{
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.card:hover .blog-img-wrapper img{
+    transform: scale(1.05);
+}
+.badge-impacto{
+    background-color: var(--violeta-z);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.texto-impacto{
+    color: #d9b9ff;
+}
+.btn-impacto{
+    background-color: var(--naranja-z);
+    color: white;
+    transition: transform 0.3s ease;
+}
+.btn-impacto:hover, .btn-impacto:active{
+    transform: scale(1.05);
+    background-color: var(--naranja-z) !important;
+    color: white !important;
+}
+.footer-desc{
+    font-size: 12px;
+    max-width: 200px;
+}
+.footer-title{
+    color: var(--violeta-z);
+    font-size: 14px;
+}
+.footer-list{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 2.5;
+}
+.footer-copyright{
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.footer-link{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-link:hover{
+    color: var(--violeta-z) !important;
+}
+ .container-cuidamos img {
+    border-color: rgba(120, 65, 186, 0.3) !important;
+}
+
+.footer-logo {
+    color: #9ca3af;
+}
+
+/* Badge personalizado */
+.badge.text-naranja {
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 1px;
+    background: rgba(255, 107, 0, 0.1) !important;
+}
+
+/* Sombras suaves */
+.shadow-lg {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1) !important;
+}
+@keyframes slideInLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes scaleUp{
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animate-slide-left{
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+.animate-scale-up{
+    opacity: 0;
+    animation: scaleUp 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.py-custom{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
