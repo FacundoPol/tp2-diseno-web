@@ -1,145 +1,58 @@
-/* --- Lógica de Filtrado (Asegura que se vea) --- */
-.newspaper-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 30px;
-    margin-top: 30px;
+.custom-card {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    border: 1px solid #ddd !important;
 }
 
-/* Ocultar los radio buttons feos */
-input[type="radio"] {
-    display: none;
+/* El efecto ZOOM  */
+.custom-card:hover, .card-zoom-activo {
+    transform: scale(1.05) !important;
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
 }
 
-/* Estilo de los botones de filtro */
-.filter-labels {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-}
+/* Lógica de filtrado con Radio Buttons */
+input[type="radio"] { display: none; }
 
-.filter-labels label {
-    padding: 10px 20px;
-    background-color: var(--bg-color);
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-weight: bold;
-}
+#todas:checked ~ .row .news-item { display: block; }
+#norte:checked ~ .row .news-item:not(.norte) { display: none; }
+#sur:checked ~ .row .news-item:not(.sur) { display: none; }
+#playa:checked ~ .row .news-item:not(.playa) { display: none; }
 
-/* Cuando el radio button está chequeado, cambia el color del label que le sigue */
+/* Estilo para los botones cuando el radio está activo */
 #todas:checked ~ .filter-labels label[for="todas"],
 #norte:checked ~ .filter-labels label[for="norte"],
 #sur:checked ~ .filter-labels label[for="sur"],
 #playa:checked ~ .filter-labels label[for="playa"] {
-    background-color: #333;
+    background-color: #212529;
     color: white;
-    border-color: #333;
 }
-
-/* LÓGICA DE FILTRADO REAL */
-/* Si se elige un filtro, ocultamos los que NO pertenecen a esa clase */
-#norte:checked ~ .newspaper-grid article:not(.norte),
-#sur:checked ~ .newspaper-grid article:not(.sur),
-#playa:checked ~ .newspaper-grid article:not(.playa) {
-    display: none;
+.news-item {
+    display: block; 
 }
-
-/* --- Imágenes y artículos --- */
-.news-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border: 1px solid #000;
-}
-
-/* REVELACIÓN (Si se ven blancos es por esto, asegúrate de que sea 1) */
-/* 1. Estado inicial: Así nacen los elementos (Ocultos y abajo) */
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease-out; /* Esta es la velocidad de la animación */
-}
-
-/* 2. Estado final: Así se ven cuando el JS les pone la clase 'visible' */
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* Contenedor principal de comentarios */
-.comments-section {
-    margin-top: 50px;
-    padding: 20px;
-    border-top: 3px double #333; /* Línea doble estilo diario */
-    background-color: var(--bg-color);
-}
-
-.comments-title {
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #000;
-    display: inline-block;
-}
-
-/* La tarjeta del comentario */
-.comment-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    background: var(--bg-color);
-    padding: 15px;
-    border: 1px solid #ddd;
-    box-shadow: 4px 4px 0px #eee; /* Sombrita sólida */
-}
-
-/* REQUISITO: Avatar creado con CSS puro */
+/* Avatares CSS */
 .avatar-css {
-    width: 50px;
-    height: 50px;
-    background: #555; /* Color de fondo del círculo */
+    width: 50px; height: 50px;
+    background: #555;
     border-radius: 50%;
     position: relative;
-    flex-shrink: 0; /* Para que no se aplaste */
-    overflow: hidden;
+    flex-shrink: 0;
+    overflow: hidden; 
 }
 
-/* Cabeza del avatar */
-.avatar-css::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #eee;
-    border-radius: 50%;
-    top: 8px;
-    left: 15px;
+.avatar-css::before { /* Cabeza */
+    content: ''; position: absolute;
+    width: 20px; height: 20px;
+    background: #eee; border-radius: 50%;
+    top: 8px; left: 15px;
 }
 
-/* Cuerpo del avatar */
-.avatar-css::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 25px;
-    background: #eee;
-    border-radius: 50%;
-    bottom: -10px;
-    left: 5px;
+.avatar-css::after { /* Cuerpo */
+    content: ''; position: absolute;
+    width: 40px; height: 25px;
+    background: #eee; border-radius: 50%;
+    bottom: -10px; left: 5px;
 }
 
-.user-name {
-    display: block;
-    font-weight: bold;
-    color: var(--text-color);
-    margin-bottom: 5px;
-}
-
-.user-text {
-    margin: 0;
-    font-style: italic;
-    color: var(--text-color);
-}
-
+/* Animación Reveal */
+.reveal { opacity: 0; transform: translateY(30px); transition: 0.3s ease-out; }
+.reveal.visible { opacity: 1; transform: translateY(0); }

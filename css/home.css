@@ -13,6 +13,7 @@
 	}
 }
 
+/* ---------------- */
 /*? SECCION BANNER HEADER */
 .hero-banner {
 	display: flex;
@@ -40,7 +41,7 @@
 
 		p {
 			font-size: 14px;
-			color: #333;
+			color: var(--text-color);
 			width: 80%;
 			line-height: 1.5;
 		}
@@ -69,7 +70,7 @@
 			}
 
 			.btn-banner-secondary {
-				color: #201d2e;
+				color: var(--text-color);
 				border: 2px solid var(--primary-color);
 			}
 		}
@@ -235,146 +236,78 @@
 
 /* NUEVO HERO VIDEO */
 .hero-video {
-  position: relative;
-  height: 80vh;
-  margin-top: 100px;
-  overflow: hidden;
-  border-radius: 20px;
+	position: relative;
+	height: 80vh;
+	margin-top: 100px;
+	overflow: hidden;
+	border-radius: 20px;
 }
 
 /* VIDEO */
 .video-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* OVERLAY */
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 /* CONTENIDO */
 .content-video {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
+	position: relative;
+	z-index: 2;
+	color: white;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .content-video h2 {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .btn-video {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: var(--primary-color);
-  color: white;
-  border-radius: 5px;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: var(--primary-color);
+	color: white;
+	border-radius: 5px;
 }
 
 /*carrusel y contador */
 .contador {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 80px auto;
-  text-align: center;
-  width: 100%;
+	display: flex;
+	justify-content: space-around;
+	max-width: 1200px;
+	margin: 80px auto;
+	text-align: center;
+	width: 100%;
 }
 
 .numero {
-  font-size: 40px;
-  color: var(--primary-color);
-  animation: pop 1s ease;
-  margin-bottom: 10px;
+	font-size: 40px;
+	color: var(--primary-color);
+	animation: pop 1s ease;
+	margin-bottom: 10px;
 }
 
-@keyframes pop {
-  from {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-/* mas */
-.testimonios {
-  display: flex;
-  flex-direction: column;
-   align-items: center;
-  text-align: center;
-}
 
-.slider {
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
+.carousel-item img {
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
 }
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  flex: 0 0 100%;
-    
-}
-
-/* ocultar radios */
-.testimonios input {
-  display: none;
-}
-
-/* movimiento */
-#t1:checked ~ .slider .slides {
-  transform: translateX(0%);
-}
-
-#t2:checked ~ .slider .slides {
-  transform: translateX(-100%);
-}
-
-#t3:checked ~ .slider .slides {
-  transform: translateX(-200%);
-}
-
-/* botones */
-.controls {
-  margin-top: 20px;
-}
-
-.controls label {
-  width: 12px;
-  height: 12px;
-  background: #ccc;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 5px;
-  cursor: pointer;
-}
-
-#t1:checked ~ .controls label:nth-child(1),
-#t2:checked ~ .controls label:nth-child(2),
-#t3:checked ~ .controls label:nth-child(3) {
-  background: var(--primary-color);
-}
-
 
 /* ********** SECTION ABOUT ********* */
-.section-about {
+/* .section-about {
 	display: flex;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -493,10 +426,10 @@
 			}
 		}
 	}
-}
+} */
 
 /* ********** TOP DESTINOS ********** */
-.section-top-destination {
+/* .section-top-destination {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -523,7 +456,7 @@
 			width: 100%;
 		}
 	}
-}
+} */
 
 .container-destination {
 	display: grid;
@@ -586,11 +519,9 @@
 	}
 
 	.img-background-1 {
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 0.5) 20%,
-				rgba(0, 0, 0, 0) 80%
-			),
+				rgba(0, 0, 0, 0) 80%),
 			url('../img/home/destination-1.avif');
 		background-size: cover;
 		background-position: center;
@@ -598,11 +529,9 @@
 	}
 
 	.img-background-2 {
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 0.5) 20%,
-				rgba(0, 0, 0, 0) 80%
-			),
+				rgba(0, 0, 0, 0) 80%),
 			url('../img/home/destination-2.avif');
 		background-size: cover;
 		background-position: center;
@@ -610,11 +539,9 @@
 	}
 
 	.img-background-3 {
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 0.5) 20%,
-				rgba(0, 0, 0, 0) 80%
-			),
+				rgba(0, 0, 0, 0) 80%),
 			url('../img/home/destination-3.avif');
 		background-size: cover;
 		background-position: center;
@@ -631,7 +558,7 @@
 }
 
 /* ********** SECCION TOURS ********* */
-.section-tours {
+/* .section-tours {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -661,7 +588,7 @@
 			width: 80%;
 		}
 	}
-}
+} */
 
 .container-tabs {
 	display: flex;
@@ -849,6 +776,7 @@
 
 			.container-img {
 				flex: 1;
+
 				img {
 					height: 100%;
 				}
@@ -860,6 +788,7 @@
 				align-self: center;
 
 				.details {
+
 					.capacity-person,
 					.time {
 						font-size: 12px;
@@ -964,27 +893,23 @@
 	}
 
 	.background-adventure {
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 1) 0%,
-				rgba(0, 0, 0, 0) 50%
-			),
+				rgba(0, 0, 0, 0) 50%),
 			url('../img/home/tour-adventure.avif');
 	}
+
 	.background-romance {
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 1) 0%,
-				rgba(0, 0, 0, 0) 50%
-			),
+				rgba(0, 0, 0, 0) 50%),
 			url('../img/home/tour-romance.avif');
 	}
+
 	.background-culture {
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 1) 0%,
-				rgba(0, 0, 0, 0) 50%
-			),
+				rgba(0, 0, 0, 0) 50%),
 			url('../img/home/tour-culture.avif');
 	}
 
@@ -1002,7 +927,7 @@
 }
 
 /* ******* SECCION TESTIMONIAL ****** */
-.section-testimonial {
+/* .section-testimonial {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -1033,7 +958,7 @@
 			width: 100%;
 		}
 	}
-}
+} */
 
 .container-cards-testimonial {
 	display: grid;
@@ -1217,11 +1142,9 @@
 		grid-row: 1/ -1;
 		grid-column: 1/ 3;
 
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 0.8) 10%,
-				rgba(0, 0, 0, 0.1) 50%
-			),
+				rgba(0, 0, 0, 0.1) 50%),
 			url('../img/home/news-blog-1.avif');
 	}
 
@@ -1229,11 +1152,9 @@
 		grid-row: 1/2;
 		grid-column: 3/-1;
 
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 0.8) 10%,
-				rgba(0, 0, 0, 0.1) 50%
-			),
+				rgba(0, 0, 0, 0.1) 50%),
 			url('../img/home/news-blog-2.avif');
 	}
 
@@ -1241,11 +1162,9 @@
 		grid-row: 2/-1;
 		grid-column: 3/-1;
 
-		background-image: linear-gradient(
-				to top,
+		background-image: linear-gradient(to top,
 				rgba(0, 0, 0, 0.8) 10%,
-				rgba(0, 0, 0, 0.1) 50%
-			),
+				rgba(0, 0, 0, 0.1) 50%),
 			url('../img/home/news-blog-3.avif');
 	}
 
