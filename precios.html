@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Tours | Adventurero</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/global.css" />
-		<link rel="stylesheet" href="css/header.css" />
-		<link rel="stylesheet" href="css/tours.css" />
-		<link rel="stylesheet" href="css/footer.css" />
-		<link rel="stylesheet" href="css/animaciones.css">
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-			integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg ">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tours | Adventurero</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/tours.css" />
+	<link rel="stylesheet" href="css/animaciones.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg ">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
 				<img src="img/logo.png" alt="Logo">
@@ -87,288 +80,265 @@
 			</div>
 		</div>
 	</nav>
-		<main class="container">
-			<div style="margin: 40px 0; text-align: center;">
-        		<h1 class="title">Nuestros Precios</h1>
-       			 <p style="color: var(--text-color); margin-top: 10px;">
-            	Encontrá el paquete que mejor se adapte a tu próxima aventura.
-        		</p>
+	<main class="container">
+		<div style="margin: 40px 0; text-align: center;">
+			<h1 class="title">Nuestros Precios</h1>
+			<p style="color: var(--text-color); margin-top: 10px;">
+				Encontrá el paquete que mejor se adapte a tu próxima aventura.
+			</p>
 
-				<div class="mt-3">
-            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalPhishing">
-                <i class="fa-solid fa-shield-virus"></i> Simulación de phishing
-            </button>
-        </div>
-    		</div>
-			<section class="container my-5">
-    <div class="table-responsive">
-        <table class="table table-hover align-middle shadow-sm" id="tabla-precios">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">Destino</th>
-                    <th scope="col">Capacidad</th>
-                    <th scope="col">Duración</th>
-                    <th scope="col">Servicios 
-                        <i class="fa-solid fa-circle-info text-info" 
-                           data-bs-toggle="tooltip" 
-                           title="Pasa el mouse para ver qué incluye cada paquete"></i>
-                    </th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Acción</th>
-                </tr>
-            </thead>
-           <tbody id="cuerpo-tabla">
-    <tr>
-        <td><strong>Quebrada de Humahuaca</strong></td>
-        <td><span class="badge bg-warning text-dark">Cultural</span></td>
-        <td>3 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Pucará de Tilcara, Cerro 7 Colores y traslados"></i>
-        </td>
-        <td class="fw-bold text-success">$95.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+			<div class="mt-3">
+				<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalPhishing">
+					<i class="fa-solid fa-shield-virus"></i> Simulación de phishing
+				</button>
+			</div>
+		</div>
+		<section class="container my-5">
+			<div class="table-responsive">
+				<table class="table table-hover align-middle shadow-sm" id="tabla-precios">
+					<thead class="table-dark">
+						<tr>
+							<th scope="col">Destino</th>
+							<th scope="col">Capacidad</th>
+							<th scope="col">Duración</th>
+							<th scope="col">Servicios
+								<i class="fa-solid fa-circle-info text-info" data-bs-toggle="tooltip"
+									title="Pasa el mouse para ver qué incluye cada paquete"></i>
+							</th>
+							<th scope="col">Precio</th>
+							<th scope="col">Acción</th>
+						</tr>
+					</thead>
+					<tbody id="cuerpo-tabla">
+						<tr>
+							<td><strong>Quebrada de Humahuaca</strong></td>
+							<td><span class="badge bg-warning text-dark">Cultural</span></td>
+							<td>3 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Pucará de Tilcara, Cerro 7 Colores y traslados"></i>
+							</td>
+							<td class="fw-bold text-success">$95.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Iruya, Salta</strong></td>
-        <td><span class="badge bg-primary">Aventura</span></td>
-        <td>2 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Viaje en 4x4, caminata por el pueblo y hospedaje"></i>
-        </td>
-        <td class="fw-bold text-success">$110.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+						<tr>
+							<td><strong>Iruya, Salta</strong></td>
+							<td><span class="badge bg-primary">Aventura</span></td>
+							<td>2 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Viaje en 4x4, caminata por el pueblo y hospedaje"></i>
+							</td>
+							<td class="fw-bold text-success">$110.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Cataratas del Iguazú</strong></td>
-        <td><span class="badge bg-success">Naturaleza</span></td>
-        <td>4 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Vuelo incluido, Garganta del Diablo y Gran Aventura"></i>
-        </td>
-        <td class="fw-bold text-success">$320.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+						<tr>
+							<td><strong>Cataratas del Iguazú</strong></td>
+							<td><span class="badge bg-success">Naturaleza</span></td>
+							<td>4 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Vuelo incluido, Garganta del Diablo y Gran Aventura"></i>
+							</td>
+							<td class="fw-bold text-success">$320.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Bariloche (Cerro Catedral)</strong></td>
-        <td><span class="badge bg-info text-dark">Nieve</span></td>
-        <td>7 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Pases de ski, equipo completo y chocolate de cortesía"></i>
-        </td>
-        <td class="fw-bold text-success">$580.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+						<tr>
+							<td><strong>Bariloche (Cerro Catedral)</strong></td>
+							<td><span class="badge bg-info text-dark">Nieve</span></td>
+							<td>7 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Pases de ski, equipo completo y chocolate de cortesía"></i>
+							</td>
+							<td class="fw-bold text-success">$580.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Salinas Grandes, Jujuy</strong></td>
-        <td><span class="badge bg-warning text-dark">Cultural</span></td>
-        <td>1 Día</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Fotos creativas, guía experto y almuerzo andino"></i>
-        </td>
-        <td class="fw-bold text-success">$45.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+						<tr>
+							<td><strong>Salinas Grandes, Jujuy</strong></td>
+							<td><span class="badge bg-warning text-dark">Cultural</span></td>
+							<td>1 Día</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Fotos creativas, guía experto y almuerzo andino"></i>
+							</td>
+							<td class="fw-bold text-success">$45.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Glaciar Perito Moreno</strong></td>
-        <td><span class="badge bg-primary">Aventura</span></td>
-        <td>5 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Safari náutico, trekking con grampones y hotel"></i>
-        </td>
-        <td class="fw-bold text-success">$450.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+						<tr>
+							<td><strong>Glaciar Perito Moreno</strong></td>
+							<td><span class="badge bg-primary">Aventura</span></td>
+							<td>5 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Safari náutico, trekking con grampones y hotel"></i>
+							</td>
+							<td class="fw-bold text-success">$450.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Viñedos y Bodegas</strong></td>
-        <td><span class="badge bg-secondary">Relax</span></td>
-        <td>3 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Degustación premium, cena en 5 pasos y spa"></i>
-        </td>
-        <td class="fw-bold text-success">$210.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
+						<tr>
+							<td><strong>Viñedos y Bodegas</strong></td>
+							<td><span class="badge bg-secondary">Relax</span></td>
+							<td>3 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Degustación premium, cena en 5 pasos y spa"></i>
+							</td>
+							<td class="fw-bold text-success">$210.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
 
-    <tr>
-        <td><strong>Sierras de Córdoba</strong></td>
-        <td><span class="badge bg-danger">Familiar</span></td>
-        <td>6 Días</td>
-        <td>
-            <i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip" title="Entradas a teatros, Pekos y city tour"></i>
-        </td>
-        <td class="fw-bold text-success">$185.000</td>
-        <td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
-    </tr>
-</tbody>
-        </table>
-    </div>
-</section>
+						<tr>
+							<td><strong>Sierras de Córdoba</strong></td>
+							<td><span class="badge bg-danger">Familiar</span></td>
+							<td>6 Días</td>
+							<td>
+								<i class="fa-solid fa-circle-info text-primary" data-bs-toggle="tooltip"
+									title="Entradas a teatros, Pekos y city tour"></i>
+							</td>
+							<td class="fw-bold text-success">$185.000</td>
+							<td><button class="btn btn-outline-primary btn-sm efecto-elevar">Ver más</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
 
-			<section class="container-pagination">
-				<a href="#" class="active efecto-agrandar">1</a>
-				<a href="#" class="efecto-agrandar">2</a>
-				<a href="#" class="efecto-agrandar">3</a>
-				<a href="#" class="efecto-agrandar">4</a>
-				<a href="#" class="next efecto-agrandar">
-					<i class="fa-solid fa-chevron-right"></i>
-				</a>
-			</section>
-		</main>
+		<section class="container-pagination">
+			<a href="#" class="active efecto-agrandar">1</a>
+			<a href="#" class="efecto-agrandar">2</a>
+			<a href="#" class="efecto-agrandar">3</a>
+			<a href="#" class="efecto-agrandar">4</a>
+			<a href="#" class="next efecto-agrandar">
+				<i class="fa-solid fa-chevron-right"></i>
+			</a>
+		</section>
+	</main>
 
-		<!-- FOOTER -->
-		<footer>
-			<div class="container footer-content">
-				<div class="columns-footer">
-					<div class="column">
-						<a href="/" class="container-logo">
-							<img src="img/logo.png" alt="Logo" />
-							<span class="logo-text"> Destinova </span>
-						</a>
-
-						<div class="container-social-links">
-							<span>Síguenos: </span>
-							<div class="links">
-								<a href="#">
-									<i class="fab fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</div>
+	<!-- FOOTER -->
+	<div class="footer bg-dark text-white py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-6 col-lg-3">
+					<a href="/" class="container-logo d-flex gap-3" style="text-decoration: none;">
+						<img src="img/logo.png" alt="Logo">
+						<span>Destinova</span>
+					</a>
+					<div class="mt-4">
+						<span>Siguenos </span>
+						<div class="links mt-2 d-flex gap-3">
+							<a href="https://www.facebook.com/?locale=es_LA">
+								<i class="sprite-icon icon-fb"></i>
+							</a>
+							<a href="https://x.com/home">
+								<i class="sprite-icon icon-tw"></i>
+							</a>
+							<a href="https://www.instagram.com/p/DXc4Y1Jlix5/?img_index=2">
+								<i class="sprite-icon icon-ig"></i>
+							</a>
 						</div>
 					</div>
-
-					<div class="column">
-						<span> Sobre Nosotros </span>
-
-						<ul>
-							<li>
-								<a href="#">Nuestra Historia</a>
-							</li>
-							<li>
-								<a href="#">Blog Viajes y consejos</a>
-							</li>
-							<li>
-								<a href="#">Trabaja con nosotros</a>
-							</li>
-							<li>
-								<a href="#">Términos y condiciones</a>
-							</li>
-							<li>
-								<a href="#">Preguntas Frecuentes</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="column">
-						<span>Soporte</span>
-
-						<ul>
-							<li>
-								<a href="#">Soporte al cliente</a>
-							</li>
-							<li>
-								<a href="#">Políticas de privacidad</a>
-							</li>
-							<li>
-								<a href="#">Contáctanos</a>
-							</li>
-						</ul>
-                        
-					</div>
-                      <div class="column">
-                         <span>Ubicación</span>
-
-                            <iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"loading="lazy"></iframe>
-                      </div>
-					<div class="column">
-                       <span>Suscribite</span>
-
-                           <p>Recibí ofertas y novedades</p>
-
-                           <form class="newsletter">
-                           <input type="email" placeholder="Tu email" required>
-                             <button type="submit">Suscribirse</button>
-                             </form>
-                      </div>
-                      
+				</div>
+				<div class="col col-md-6 col-lg-3 mt-2">
+					<span>Sobre nosotros</span>
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Nuestra Historia</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Blog Viajes y consejos</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Trabaja con nosotros</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Términos y condiciones</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Preguntas Frecuentes</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-md-6 col-lg-3 mt-2">
+					<span>Soporte</span>
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Soporte al cliente</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Politicas de privacidad</a>
+						</li>
+						<li>
+							<a class="text-decoration-none text-white-50" href="#">Contactanos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-md-6 col-lg-3 mt-2">
+					<span>Suscribite</span>
+					<p class="text-white-50">Recibí ofertas y novedades</p>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Tu email" aria-label="First name">
+						<button type="submit" class="btn btn-primary">Sign in</button>
 					</div>
 				</div>
+				<div class="col col-md-6 col-lg-6 mt-5" id="mapa">
+					<div class="ratio ratio-16x9">
+						<iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"
+							loading="lazy"></iframe>
+					</div>
 
+				</div>
+			</div>
+			<div class="col text-center mt-5">
 				<p class="copyright">
-					&copy; 2024 Adventurero | Desarrollado por Roberto Andrade
+					&copy; 2026 Adventurero | Desarrollado por Grupo_Web
 				</p>
 			</div>
-		</footer>
+		</div>
+	</div>
 
-		<script src="js/global.js"></script>
-		<script>
-$(document).ready(function(){
-   
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    });
+	<div class="modal fade" id="modalPhishing" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-danger text-white">
+					<h5 class="modal-title"><i class="fa-solid fa-triangle-exclamation"></i> Módulo Educativo: Phishing
+					</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<p class="fw-bold text-danger text-center">¡Atención! Estás por entrar a una zona de pruebas.</p>
+					<p>El phishing es una técnica de engaño para robar datos. Antes de ir a la siguiente página,
+						recuerda identificar estas señales de fraude:</p>
 
-    
-    $('#tabla-precios tr').hover(
-        function() {
-            $(this).addClass('table-primary animate__animated animate__pulse');
-        }, 
-        function() {
-            $(this).removeClass('table-primary animate__animated animate__pulse');
-        }
-    );
+					<ul class="list-group list-group-flush mb-3">
+						<li class="list-group-item"><i class="fa-solid fa-link text-primary"></i> URL sospechosa (ej:
+							"destin0va.com" en vez de "destinova.com")</li>
+						<li class="list-group-item"><i class="fa-solid fa-envelope-open-text text-primary"></i> Errores
+							de ortografía o gramática.</li>
+						<li class="list-group-item"><i class="fa-solid fa-clock text-primary"></i> Sentido de urgencia
+							extrema.</li>
+					</ul>
 
-    
-    $('#btnConfirmarPhishing').on('click', function() {
-       
-        $(this).html('<span class="spinner-border spinner-border-sm"></span> Cargando simulación...');
-        
-        setTimeout(function() {
-            
-            window.location.href = "./banco.html";
-        }, 1500); 
-    });
-});
-</script>
+					<div class="alert alert-info py-2">
+						<small><strong>Nota:</strong> No ingreses datos reales en la siguiente página.</small>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					<button type="button" id="btnConfirmarPhishing" class="btn btn-danger">Entendido, ir a la
+						simulación</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/global.js"></script>
+	<script src="js/precios.js"></script>
+</body>
 
-		<div class="modal fade" id="modalPhishing" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="fa-solid fa-triangle-exclamation"></i> Módulo Educativo: Phishing</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p class="fw-bold text-danger text-center">¡Atención! Estás por entrar a una zona de pruebas.</p>
-                <p>El phishing es una técnica de engaño para robar datos. Antes de ir a la siguiente página, recuerda identificar estas señales de fraude:</p>
-                
-                <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item"><i class="fa-solid fa-link text-primary"></i> URL sospechosa (ej: "destin0va.com" en vez de "destinova.com")</li>
-                    <li class="list-group-item"><i class="fa-solid fa-envelope-open-text text-primary"></i> Errores de ortografía o gramática.</li>
-                    <li class="list-group-item"><i class="fa-solid fa-clock text-primary"></i> Sentido de urgencia extrema.</li>
-                </ul>
-                
-                <div class="alert alert-info py-2">
-                    <small><strong>Nota:</strong> No ingreses datos reales en la siguiente página.</small>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" id="btnConfirmarPhishing" class="btn btn-danger">Entendido, ir a la simulación</button>
-            </div>
-        </div>
-    </div>
-</div>
-	</body>
 </html>

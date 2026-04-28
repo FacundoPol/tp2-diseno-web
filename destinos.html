@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - aventura</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/destinos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio - aventura</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/destinos.css">
 	<link rel="stylesheet" href="css/animaciones.css">
 </head>
- 
+
 <body>
-		<nav class="navbar navbar-expand-lg ">
+	<nav class="navbar navbar-expand-lg ">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
 				<img src="img/logo.png" alt="Logo">
@@ -75,197 +78,198 @@
 		</div>
 	</nav>
 
-        <main class="container my-5">
-    <div class="newspaper-header text-center mb-5">
-        <h1 class="display-4 fw-bold">CRÓNICAS DE VIAJE</h1>
-        <div class="newspaper-meta d-flex justify-content-center gap-4 border-top border-bottom py-2">
-            <span>Edición: Invierno 2026</span>
-            <span>Jujuy, Argentina</span>
-        </div>
-    </div>
+	<main class="container my-5">
+		<div class="newspaper-header text-center mb-5">
+			<h1 class="display-4 fw-bold">CRÓNICAS DE VIAJE</h1>
+			<div class="newspaper-meta d-flex justify-content-center gap-4 border-top border-bottom py-2">
+				<span>Edición: Invierno 2026</span>
+				<span>Jujuy, Argentina</span>
+			</div>
+		</div>
 
-    <section class="filter-section">
-        <input type="radio" name="categoria" id="todas" checked>
-        <input type="radio" name="categoria" id="norte">
-        <input type="radio" name="categoria" id="sur">
-        <input type="radio" name="categoria" id="playa">
+		<section class="filter-section">
+			<input type="radio" name="categoria" id="todas" checked>
+			<input type="radio" name="categoria" id="norte">
+			<input type="radio" name="categoria" id="sur">
+			<input type="radio" name="categoria" id="playa">
 
-        <div class="filter-labels d-flex flex-wrap justify-content-center gap-2 mb-4">
-            <label for="todas" class="btn btn-outline-dark">Todas</label>
-            <label for="norte" class="btn btn-outline-dark">Norte Argentino</label>
-            <label for="sur" class="btn btn-outline-dark">Patagonia</label>
-            <label for="playa" class="btn btn-outline-dark">Costa</label>
-        </div>
+			<div class="filter-labels d-flex flex-wrap justify-content-center gap-2 mb-4">
+				<label for="todas" class="btn btn-outline-dark">Todas</label>
+				<label for="norte" class="btn btn-outline-dark">Norte Argentino</label>
+				<label for="sur" class="btn btn-outline-dark">Patagonia</label>
+				<label for="playa" class="btn btn-outline-dark">Costa</label>
+			</div>
 
-      <div class="row g-4">
-    <article class="col-12 col-md-6 col-lg-4 news-item norte reveal">
-        <div class="card h-100 shadow-sm custom-card">
-            <img src="img/home/banerprincipal.webp" class="card-img-top" alt="Purmamarca">
-            <div class="card-body">
-                <span class="badge bg-dark mb-2">Norte</span>
-                <h5 class="card-title fw-bold">Purmamarca: El cerro de los siete colores</h5>
-                <p class="card-text">Un recorrido por el corazón de la Quebrada de Humahuaca.</p>
-            </div>
-        </div>
-    </article>
+			<div class="row g-4">
+				<article class="col-12 col-md-6 col-lg-4 news-item norte reveal">
+					<div class="card h-100 shadow-sm custom-card">
+						<img src="img/home/banerprincipal.webp" class="card-img-top" alt="Purmamarca">
+						<div class="card-body">
+							<span class="badge bg-dark mb-2">Norte</span>
+							<h5 class="card-title fw-bold">Purmamarca: El cerro de los siete colores</h5>
+							<p class="card-text">Un recorrido por el corazón de la Quebrada de Humahuaca.</p>
+						</div>
+					</div>
+				</article>
 
-    <article class="col-12 col-md-6 col-lg-4 news-item sur reveal">
-        <div class="card h-100 shadow-sm custom-card">
-            <img src="img/destinos/des4.jpeg" class="card-img-top" alt="Glaciar">
-            <div class="card-body">
-                <span class="badge bg-dark mb-2">Sur</span>
-                <h5 class="card-title fw-bold">Hielo Continental</h5>
-                <p class="card-text">La majestuosidad del Perito Moreno en una expedición única.</p>
-            </div>
-        </div>
-    </article>
+				<article class="col-12 col-md-6 col-lg-4 news-item sur reveal">
+					<div class="card h-100 shadow-sm custom-card">
+						<img src="img/destinos/des4.jpeg" class="card-img-top" alt="Glaciar">
+						<div class="card-body">
+							<span class="badge bg-dark mb-2">Sur</span>
+							<h5 class="card-title fw-bold">Hielo Continental</h5>
+							<p class="card-text">La majestuosidad del Perito Moreno en una expedición única.</p>
+						</div>
+					</div>
+				</article>
 
-    <article class="col-12 col-md-6 col-lg-4 news-item playa reveal">
-        <div class="card h-100 shadow-sm custom-card">
-            <img src="img/destinos/des5.jpeg" class="card-img-top" alt="Mar del Plata">
-            <div class="card-body">
-                <span class="badge bg-dark mb-2">Playa</span>
-                <h5 class="card-title fw-bold">Atardeceres en el Faro</h5>
-                <p class="card-text">La costa argentina se prepara para una temporada récord.</p>
-            </div>
-        </div>
-    </article>
+				<article class="col-12 col-md-6 col-lg-4 news-item playa reveal">
+					<div class="card h-100 shadow-sm custom-card">
+						<img src="img/destinos/des5.jpeg" class="card-img-top" alt="Mar del Plata">
+						<div class="card-body">
+							<span class="badge bg-dark mb-2">Playa</span>
+							<h5 class="card-title fw-bold">Atardeceres en el Faro</h5>
+							<p class="card-text">La costa argentina se prepara para una temporada récord.</p>
+						</div>
+					</div>
+				</article>
 
-    <article class="col-12 col-md-6 col-lg-4 news-item norte reveal">
-        <div class="card h-100 shadow-sm custom-card">
-            <img src="img/destinos/des1.jpeg" class="card-img-top" alt="Salinas">
-            <div class="card-body">
-                <span class="badge bg-dark mb-2">Norte</span>
-                <h5 class="card-title fw-bold">Salinas Grandes</h5>
-                <p class="card-text">El desierto blanco que enamora a los fotógrafos del mundo.</p>
-            </div>
-        </div>
-    </article>
-</div>
-    </section>
+				<article class="col-12 col-md-6 col-lg-4 news-item norte reveal">
+					<div class="card h-100 shadow-sm custom-card">
+						<img src="img/destinos/des1.jpeg" class="card-img-top" alt="Salinas">
+						<div class="card-body">
+							<span class="badge bg-dark mb-2">Norte</span>
+							<h5 class="card-title fw-bold">Salinas Grandes</h5>
+							<p class="card-text">El desierto blanco que enamora a los fotógrafos del mundo.</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
 
-    <section class="comments-section mt-5 pt-4 border-top">
-        <h3 class="mb-4">Comunidad Destinova</h3>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="comment-card d-flex align-items-center p-3 mb-3 border rounded shadow-sm">
-                    <div class="avatar-css me-3"></div>
-                    <div>
-                        <strong class="d-block">Roberto Andrade</strong>
-                        <span class="text-muted">Hermosos paisajes</span>
-                    </div>
-                </div>
-            </div>
-			<div class="col-12 col-md-6 col-lg-4">
-            <div class="comment-card d-flex align-items-center p-3 border rounded shadow-sm h-100">
-                <div class="avatar-css me-3"></div>
-                <div class="comment-content">
-                    <strong class="user-name d-block">Maria Condori</strong>
-                    <p class="user-text mb-0">Maravillosa experiencia</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="comment-card d-flex align-items-center p-3 border rounded shadow-sm h-100">
-                <div class="avatar-css me-3"></div>
-                <div class="comment-content">
-                    <strong class="user-name d-block">Leonel Martinez</strong>
-                    <p class="user-text mb-0">Bellas Vistas</p>
-                </div>
-            </div>
-        </div>
-            </div>
-    </section>
-</main>
-
-<!-- FOOTER -->
-<footer>
-			<div class="footer bg-dark text-white py-5">
-		<div class="container">
+		<section class="comments-section mt-5 pt-4 border-top">
+			<h3 class="mb-4">Comunidad Destinova</h3>
 			<div class="row">
-				<div class="col col-md-6 col-lg-3">
-					<a href="/" class="container-logo d-flex gap-3" style="text-decoration: none;">
-						<img src="img/logo.png" alt="Logo">
-						<span>Destinova</span>
-					</a>
-					<div class="mt-4">
-						<span>Siguenos </span>
-						<div class="links mt-2 d-flex gap-3">
-							<a href="#">
-								<i class="fab fa-facebook"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-instagram"></i>
-							</a>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="comment-card d-flex align-items-center p-3 mb-3 border rounded shadow-sm">
+						<div class="avatar-css me-3"></div>
+						<div>
+							<strong class="d-block">Roberto Andrade</strong>
+							<span class="text-muted">Hermosos paisajes</span>
 						</div>
 					</div>
 				</div>
-				<div class="col col-md-6 col-lg-3 mt-2">
-					<span>Sobre nosotros</span>
-					<ul class="list-unstyled">
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Nuestra Historia</a>
-						</li>
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Blog Viajes y consejos</a>
-						</li>
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Trabaja con nosotros</a>
-						</li>
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Términos y condiciones</a>
-						</li>
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Preguntas Frecuentes</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col col-md-6 col-lg-3 mt-2">
-					<span>Soporte</span>
-					<ul class="list-unstyled">
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Soporte al cliente</a>
-						</li>
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Politicas de privacidad</a>
-						</li>
-						<li>
-							<a class="text-decoration-none text-white-50" href="#">Contactanos</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col col-md-6 col-lg-3 mt-2">
-					<span>Suscribite</span>
-					<p class="text-white-50">Recibí ofertas y novedades</p>
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Tu email" aria-label="First name">
-						<button type="submit" class="btn btn-primary">Sign in</button>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="comment-card d-flex align-items-center p-3 border rounded shadow-sm h-100">
+						<div class="avatar-css me-3"></div>
+						<div class="comment-content">
+							<strong class="user-name d-block">Maria Condori</strong>
+							<p class="user-text mb-0">Maravillosa experiencia</p>
+						</div>
 					</div>
 				</div>
-				<div class="col col-md-6 col-lg-6 mt-5" id="mapa">
-					<div class="ratio ratio-16x9">
-						<iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"
-							loading="lazy"></iframe>
-					</div>
 
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="comment-card d-flex align-items-center p-3 border rounded shadow-sm h-100">
+						<div class="avatar-css me-3"></div>
+						<div class="comment-content">
+							<strong class="user-name d-block">Leonel Martinez</strong>
+							<p class="user-text mb-0">Bellas Vistas</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col text-center mt-5">
-				<p class="copyright">
-					&copy; 2026 Adventurero | Desarrollado por Grupo_Web
-				</p>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer bg-dark text-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-6 col-lg-3">
+						<a href="/" class="container-logo d-flex gap-3" style="text-decoration: none;">
+							<img src="img/logo.png" alt="Logo">
+							<span>Destinova</span>
+						</a>
+						<div class="mt-4">
+							<span>Siguenos </span>
+							<div class="links mt-2 d-flex gap-3">
+								<a href="https://www.facebook.com/?locale=es_LA">
+									<i class="sprite-icon icon-fb"></i>
+								</a>
+								<a href="https://x.com/home">
+									<i class="sprite-icon icon-tw"></i>
+								</a>
+								<a href="https://www.instagram.com/p/DXc4Y1Jlix5/?img_index=2">
+									<i class="sprite-icon icon-ig"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col col-md-6 col-lg-3 mt-2">
+						<span>Sobre nosotros</span>
+						<ul class="list-unstyled">
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Nuestra Historia</a>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Blog Viajes y consejos</a>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Trabaja con nosotros</a>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Términos y condiciones</a>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Preguntas Frecuentes</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col-md-6 col-lg-3 mt-2">
+						<span>Soporte</span>
+						<ul class="list-unstyled">
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Soporte al cliente</a>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Politicas de privacidad</a>
+							</li>
+							<li>
+								<a class="text-decoration-none text-white-50" href="#">Contactanos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col-md-6 col-lg-3 mt-2">
+						<span>Suscribite</span>
+						<p class="text-white-50">Recibí ofertas y novedades</p>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Tu email" aria-label="First name">
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</div>
+					</div>
+					<div class="col col-md-6 col-lg-6 mt-5" id="mapa">
+						<div class="ratio ratio-16x9">
+							<iframe src="https://www.google.com/maps?q=Jujuy,Argentina&output=embed"
+								loading="lazy"></iframe>
+						</div>
+
+					</div>
+				</div>
+				<div class="col text-center mt-5">
+					<p class="copyright">
+						&copy; 2026 Adventurero | Desarrollado por Grupo_Web
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-		</footer>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/global.js"></script>
-<script src="js/destinos.js"></script>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/destinos.js"></script>
 
 </body>
+
 </html>
