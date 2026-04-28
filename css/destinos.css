@@ -52,7 +52,9 @@ input[type="radio"] { display: none; }
     background: #eee; border-radius: 50%;
     bottom: -10px; left: 5px;
 }
-
+.btn{
+    color: var(--text-color);
+}
 /* Animación Reveal */
 .reveal { opacity: 0; transform: translateY(30px); transition: 0.3s ease-out; }
 .reveal.visible { opacity: 1; transform: translateY(0); }

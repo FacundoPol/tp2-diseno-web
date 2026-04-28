@@ -25,6 +25,7 @@ body.dark-mode{
 .navbar-brand img{
 	width: 60px;
 	height: auto;
+	border-radius: 30px;
 }
 .logo-text{
 	font-size: 22px;
@@ -60,7 +61,30 @@ body {
 	margin-bottom: 10px;
 	color: white;
 }
-
+.sprite-icon{
+	margin-top: 10px;
+	width: 32px;
+	height: 32px;
+	background-image: url('/img/sprite/sprite-logos.png');
+	background-size: 204px auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+	transition: transform 0.3s ease;
+	
+}
+.icon-fb{
+	background-position: 9% 10%;
+}
+.icon-tw{
+	background-position: 89% 55%;
+}
+.icon-ig{
+	background-position: 62% 9%;
+}
+.sprite-icon:hover{
+	transform: scale(1.2);
+	
+}
 /*.container {
 	max-width: 1200px;
 	margin: 0 auto;
